@@ -11,7 +11,7 @@ public class TimerScript : MonoBehaviour
 {
 
 
-    private bool _timerActive;
+    private bool _timerActive = false;
     private float _currentTime;
     [SerializeField] private int _startMinutes;
     [SerializeField] private TMP_Text _text;
@@ -21,7 +21,7 @@ public class TimerScript : MonoBehaviour
     void Start()
     {
         _currentTime = _startMinutes * 60;
-        print("start");
+        print("start1");
     }
 
     // Update is called once per frame
@@ -40,14 +40,15 @@ public class TimerScript : MonoBehaviour
         _text.text = time.Minutes.ToString() + " : " + time.Seconds.ToString();
     }
 
-    public void StartTimer(){
-        _timerActive = true;
-        print("start button");
+    public void StartStopTimer(){
+        if (_timerActive == false){
+            _timerActive = true;
+            print("start");
+        }else{
+            _timerActive = false;
+            print("stop");
+        }
     }
 
-    public void StopTimer(){
-        _timerActive = false;
-        print("stop button");
-    }
 
 }

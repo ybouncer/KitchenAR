@@ -13,8 +13,8 @@ public class DynamicRecette : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     private int _step = 0;
 
-    string[] cookingWords = { "rice", "pizza", "cake", "bread" };
-    string[] cookingEmojis = { "<sprite=69>", "<sprite=48>", "<sprite=94>", "<sprite=33>" };
+    string[] cookingWords = { "riz", "tomate", "olive", "carotte","algue", "ail", "champignon","fromage", "mozzarella","cochon","porc","bacon","oeuf","nouille","narutomaki","bol","boule" };
+    string[] cookingEmojis = { "<sprite=69>", "<sprite=16>", "<sprite=17>","<sprite=22>","<sprite=26>","<sprite=28>","<sprite=30>", "<sprite=41>","<sprite=41>","<sprite=45>","<sprite=45>","<sprite=45>","<sprite=56>","<sprite=71>","<sprite=77>","<sprite=60>","<sprite=36>" };
 
     public TextAsset jsonData;
     public RecipeList recipes = new RecipeList();
@@ -57,7 +57,7 @@ public class DynamicRecette : MonoBehaviour
             _step = _step+1;
              _text.text = emojify(recipes.recipe[1].step[_step]);
 
-            print("next");
+            //print("next");
         }
         
     }
@@ -69,7 +69,7 @@ public class DynamicRecette : MonoBehaviour
             _step = _step-1;
             _text.text = emojify(recipes.recipe[1].step[_step]);
 
-            print("previous");
+            //print("previous");
         }
     }
 
@@ -82,7 +82,7 @@ public class DynamicRecette : MonoBehaviour
             bool found = false;
             for (int j = 0; j < cookingWords.Length; j++)
             {
-                if (words[i].ToLower() == cookingWords[j])
+                if ((words[i].ToLower() == cookingWords[j]) ||(words[i].ToLower() == cookingWords[j]+"s"))
                 {
                     outputText += words[i] + cookingEmojis[j] + " ";
                     found = true;
@@ -95,7 +95,7 @@ public class DynamicRecette : MonoBehaviour
             }
         }
 
-        print(outputText);
+        //print(outputText);
         return outputText;
 
 

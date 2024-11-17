@@ -1,220 +1,59 @@
 {
 	"recipe": [
         {
-			"name": "Papoutsakia",
-			"id": "papoutsakia",
-			"description": "A traditional Greek dish that tastes very similar to moussaka, but is much quicker to cook. Fun fact: Papoutsakia in Greek means \"little shoes\" and a portion usually has two. However, when cooking with large American eggplants, you'll likely find that one per portion is enough.",
-			"tag": [
-				"Greek"
-			],
-			"ingredient": [
-				{
-					"amount": "3",
-					"name": "eggplants"
-				},
-				{
-					"unit": "extra virgin olive oil"
-				},
-				{
-					"name": "thyme"
-				},
-				{
-					"name": "salt, black pepper"
-				}
-			],
-			"ingredientGroup": [
-				{
-					"name": "Mince",
-					"ingredient": [
-						{
-							"amount": "2",
-							"unit": "lbs",
-							"name": "beef or lamb",
-							"preparation": "minced"
-						},
-						{
-							"amount": "2",
-							"name": "yellow onions",
-							"preparation": "chopped"
-						},
-						{
-							"amount": "6",
-							"name": "garlic cloves",
-							"preparation": "chopped"
-						},
-						{
-							"amount": "500",
-							"unit": "g",
-							"name": "passata (Italian-style sieved tomato purée)"
-						},
-						{
-							"name": "cinammon",
-							"preparation": "ground"
-						},
-						{
-							"name": "cloves",
-							"preparation": "ground"
-						},
-						{
-							"name": "allspice"
-						},
-						{
-							"amount": "4",
-							"unit": "tsp",
-							"name": "Better than Bouillon or other beef bouillon base"
-						},
-						{
-							"amount": "0.5",
-							"unit": "cup",
-							"name": "Metaxa or other cognac"
-						},
-						{
-							"amount": "2",
-							"unit": "tbsp",
-							"name": "Sukrin Gold or brown sugar"
-						},
-						{
-							"amount": "4",
-							"name": "bay leaves"
-						},
-						{
-							"name": "butter"
-						},
-						{
-							"name": "black pepper"
-						},
-						{
-							"name": "Worcestershire sauce"
-						}
-					]
-				},
-				{
-					"name": "Béchamel(ish)",
-					"ingredient": [
-						{
-							"amount": "1",
-							"unit": "cup",
-							"name": "butter"
-						},
-						{
-							"amount": "0.5",
-							"unit": "cup",
-							"name": "coconut flour"
-						},
-						{
-							"name": "heavy cream"
-						},
-						{
-							"amount": "4",
-							"name": "egg yolks",
-							"preparation": "beaten"
-						},
-						{
-							"amount": "250",
-							"unit": "g",
-							"name": "hard cheese (we used Gruyère)",
-							"preparation": "grated"
-						},
-						{
-							"name": "nutmeg",
-							"preparation": "freshly ground"
-						}
-					]
-				}
+			"name": "Pizza Margherita",
+			"yield": "2 portions",
+			"prepTime": "15 minutes",
+			"cookTime": "10-15 minutes",
+			"ingredients": [
+			  ["Pâte à pizza", "1 boule"],
+			  ["Sauce tomate", "1/2 tasse"],
+			  ["Fromage mozzarella frais", "1 tasse, râpé"],
+			  ["Feuilles de basilic frais", "8-10 feuilles"],
+			  ["Huile d'olive extra vierge", "2 cuillères à soupe"],
+			  ["Sel", "au goût"]
 			],
 			"step": [
-				{
-					"description": "Cut the eggplants in half and scoop out the center. Leave about 1-1.5cm of flesh. Carve the flesh crosswise."
-				},
-				{
-					"description": "Season the eggplants well with olive oil, salt, pepper, thyme. Use your hands to make sure it goes everywhere. Be fast, because they absorb the oil very quickly!"
-				},
-				{
-					"description": "Put eggplants on a large baking tray, cut side down and bake at 200C (392F) for 30-40 minutes."
-				},
-				{
-					"description": "**Mince**: \n1. Fry the onions in the butter on high heat.\n2. Once the onions have started to caramelize, add the garlic and fry for a few more minutes.\n3. Add the cinnamon, cloves, allspice, black pepper and give it a stir.\n4. Add the mince and bay leaves and reduce heat to medium.\n5. Once the meat has started to brown, pour in the Metaxa.\n6. Add the tomato pureé, Sukrin Gold, bouillon base, and Worcestershire sauce and stir well.\n5. Reduce heat and simmer for about half an hour or until the tomato tastes cooked and any liquids have been reduced."
-				},
-				{
-					"description": "**Béchamel:**\n1. Melt the butter in a small pot over low heat\n2. Whisk in the coconut flour, stirring continuously to make a roux\n3. When the roux ingredients are nicely combined, whisk in the cream, adding a little each time to avoid lumps\n4. Cook it over low heat, stirring continuously\n5. When it has thickened, add nutmeg, salt, pepper to taste\n6. Take it off the heat and stir in the yolks and grated cheese"
-				},
-				{
-					"description": "Scoop the minced meat into the eggplants, and top it with the béchamel. Bake for 10 minutes at 200C (392F), checking frequently because ovens vary. You may want to turn on the grill (US: broiler) for the last 5 minutes to give the cheese a nice golden brown."
-				}
+			  "Préchauffer le four à 475°F (245°C).",
+			  "Étaler la pâte à pizza sur une surface légèrement farinée à l'épaisseur désirée.",
+			  "Transférer la pâte sur une pierre à pizza ou une plaque à pâtisserie.",
+			  "Étaler la sauce tomate uniformément sur la pâte, en laissant un petit bord.",
+			  "Garnir de mozzarella râpée.",
+			  "Cuire au four pendant 10-15 minutes, ou jusqu'à ce que la croûte soit dorée et le fromage bouillonnant.",
+			  "Retirer du four et garnir de feuilles de basilic frais.",
+			  "Arroser d'huile d'olive extra vierge et saler au goût.",
+			  "Servir immédiatement et déguster !"
+			]
+		  },
+		  {
+			"name": "Ramen aux légumes",
+			"yield": "2 portions",
+			"prepTime": "20 minutes",
+			"cookTime": "10 minutes",
+			"ingredients": [
+			  ["Nouilles ramen", "2 paquets"],
+			  ["Bouillon de légumes", "4 tasses"],
+			  ["Carottes, râpées", "1 tasse"],
+			  ["Poireaux, émincés", "1 tasse"],
+			  ["Champignons shiitake, tranchés", "1/2 tasse"],
+			  ["Épinards frais", "1 tasse"],
+			  ["Sauce soja", "2 cuillères à soupe"],
+			  ["Huile de sésame", "1 cuillère à café"],
+			  ["Ail, haché", "1 gousse"],
+			  ["Gingembre frais, râpé", "1 pouce"]
 			],
-			"forked": "[Παπουτσάκια με μπεσαμέλ](https://akispetretzikis.com/el/categories/kreas/melitzanes-papoytsakia-me-mpesamel),\nMaria’s moussaka recipe,\n[Low carb roux,  béchamel and souffle](http://www.fatisourfriend.com/roux-bechamel-and-souffle.html)",
-			"image": "http://forkgasm.com/images/6410429C-D04A-4624-9026-715C0A64A005.jpeg"
-		},
-        {
-            "name": "Giouvarlakia",
-            "id": "giouvarlakia",
-            "description": "A low carb version of a traditional hearty Greek dish",
-            "tag": [
-                "Greek"
-            ],
-            "image": "http://forkgasm.com/images/106039513_690984628417462_2727964218559966794_n.jpg",
-            "ingredient": [
-                {
-                    "amount": "500",
-                    "unit": "g",
-                    "name": "ground meat (beef, pork, or both), at least 20% fat"
-                },
-                {
-                    "amount": "1",
-                    "name": "small onion",
-                    "preparation": "finely chopped or minced"
-                },
-                {
-                    "amount": "350",
-                    "unit": "g",
-                    "name": "cauliflower rice"
-                },
-                {
-                    "amount": "2",
-                    "name": "lemons",
-                    "preparation": "juiced"
-                },
-                {
-                    "amount": "3",
-                    "name": "eggs"
-                },
-                {
-                    "name": "olive oil"
-                },
-                {
-                    "amount": "50",
-                    "unit": "g",
-                    "name": "butter"
-                },
-                {
-                    "name": "parsley"
-                },
-                {
-                    "name": "dill"
-                },
-                {
-                    "amount": "1",
-                    "unit": "clove",
-                    "name": "garlic"
-                },
-                {
-                    "amount": "2",
-                    "unit": "tsp",
-                    "name": "concentrated chicken or vegetable stock"
-                }
-            ],
-            
-            "step": [
-                
-                     "Saute the cauliflower rice with no (or very little) oil and stir frequently, until it dries up, making sure it doesn't stick."
-                ,
-                
-                    "In a large pot, add 1.5 liters of water, the butter, 2 tbsp olive oil, and the chicken stock and bring to the boil. While you're waiting for it to boil, make the meatballs."
-                ,"Put eggplants on a large baking tray, cut side down and bake at 200C (392F) for 30-40 minutes."
-                
-            ],
-            "notes": "- For concentrated stock, we love the brand Better than Bouillon. We used chicken.",
-            "forked": "- Anastasia's Giouvarlakia\n- https://mybigfatketolife.com/2019/04/05/giouvarlakia/"
-        }
+			"step": [
+			  "Faire bouillir de l'eau dans une grande casserole.",
+			
+				"Ajouter le bouillon de légumes.",
+			  "Ajouter les nouilles ramen et cuire selon les instructions du paquet.",
+			  "Ajouter les carottes, les poireaux et les champignons shiitake au bouillon bouillant.",
+			  "Cuire pendant 5 minutes, ou jusqu'à ce que les légumes soient tendres.",
+			  "Ajouter les épinards et cuire jusqu'à ce que ils soient fanés.",
+			  "Retirer du feu et ajouter la sauce soja, l'huile de sésame, l'ail et le gingembre.",
+			  "Servir immédiatement dans des bols, en garnissant de narutomaki et d'algue nori",
+			  "Profiter de votre délicieux ramen aux légumes !"
+			]
+		  }
     ]
 }
