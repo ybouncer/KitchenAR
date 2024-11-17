@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,12 +10,12 @@ using System.IO;
 public class DynamicRecette : MonoBehaviour
 {
 
-
+   
     [SerializeField] private TMP_Text _text;
     private int _step = 0;
 
-    string[] cookingWords = { "riz", "tomate", "olive", "carotte","algue", "ail", "champignon","fromage", "mozzarella","cochon","porc","bacon","oeuf","nouille","narutomaki","bol","boule" };
-    string[] cookingEmojis = { "<sprite=69>", "<sprite=16>", "<sprite=17>","<sprite=22>","<sprite=26>","<sprite=28>","<sprite=30>", "<sprite=41>","<sprite=41>","<sprite=45>","<sprite=45>","<sprite=45>","<sprite=56>","<sprite=71>","<sprite=77>","<sprite=60>","<sprite=36>" };
+    string[] cookingWords = { "riz", "tomate", "olive", "carotte","algue", "ail", "champignon","fromage", "mozzarella","cochon","porc","bacon","oeuf","nouille","narutomaki","bol","boule","huile","poireau" };
+    string[] cookingEmojis = { "<sprite=69>", "<sprite=16>", "<sprite=17>","<sprite=22>","<sprite=26>","<sprite=28>","<sprite=30>", "<sprite=41>","<sprite=41>","<sprite=45>","<sprite=45>","<sprite=45>","<sprite=56>","<sprite=71>","<sprite=77>","<sprite=60>","<sprite=36>","<sprite=126>","<sprite=\"poireau\" index=0>" };
 
     public TextAsset jsonData;
     public RecipeList recipes = new RecipeList();
@@ -23,10 +24,10 @@ public class DynamicRecette : MonoBehaviour
     public class Recipe {
 
         public string name;
-        public string id;
-        public List<string> tag;
-        public List<string> ingredient;
-        public List<string> ingredientGroup;
+        public string yield;
+        public string prepTime;
+        public string cookTime;
+        public List<string> ingredients;
         public List<string> step;
 
     }
@@ -57,7 +58,6 @@ public class DynamicRecette : MonoBehaviour
             _step = _step+1;
              _text.text = emojify(recipes.recipe[1].step[_step]);
 
-            //print("next");
         }
         
     }
@@ -69,7 +69,6 @@ public class DynamicRecette : MonoBehaviour
             _step = _step-1;
             _text.text = emojify(recipes.recipe[1].step[_step]);
 
-            //print("previous");
         }
     }
 
@@ -79,10 +78,24 @@ public class DynamicRecette : MonoBehaviour
         string[] words = text.Split(' ');
         for (int i = 0; i < words.Length; i++)
         {
+
+            if (words[i] == "minutes"){
+                print("create timer, value = word[i-1]");
+            }
+
+            if (words[i] == "bouillir"){
+                print("create alert, icon=pot, value = 100°C");
+            }
+            if(words[i].Contains("°C")){
+                print("create alert, icon=oven, value = words[i]");
+            }
+
+
+
             bool found = false;
             for (int j = 0; j < cookingWords.Length; j++)
             {
-                if ((words[i].ToLower() == cookingWords[j]) ||(words[i].ToLower() == cookingWords[j]+"s"))
+                if ((words[i].ToLower() == cookingWords[j]) ||(words[i].ToLower() == cookingWords[j]+"s")||(words[i].ToLower() == cookingWords[j]+"x"))
                 {
                     outputText += words[i] + cookingEmojis[j] + " ";
                     found = true;
@@ -95,10 +108,12 @@ public class DynamicRecette : MonoBehaviour
             }
         }
 
-        //print(outputText);
         return outputText;
 
 
     }
+
+
+
 }
 

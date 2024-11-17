@@ -12,7 +12,7 @@ public class add_remove_timer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //GameObject TimerClone = Instantiate(TimerOriginal);
+        TimerOriginal.transform.localScale = new Vector3(0, 0, 0);
     }
 
     // Update is called once per frame
@@ -25,19 +25,20 @@ public class add_remove_timer : MonoBehaviour
         GameObject TimerClone = Instantiate(TimerOriginal, new Vector3(TimerOriginal.transform.position.x,TimerOriginal.transform.position.y-10,TimerOriginal.transform.position.z), TimerOriginal.transform.rotation);
         TimerClone.transform.parent = TimerContainer.transform;
         TimerClone.transform.localScale= new Vector3(1,1,1);
-
     
         TimerClone.name = "TimerClone" + CloneNum;
         CloneNum = CloneNum+1;
         TimerOriginal = TimerClone;
 
-        //add_to_list(current);
     }
 
     public void remove_all_timer(){
         List<GameObject> timers = new List<GameObject>();
         foreach (Transform child in TimerContainer.transform) timers.Add(child.gameObject);
+        TimerOriginal = timers[0];
+        timers.RemoveAt(0);
         timers.ForEach(child => Destroy(child));
+
     }
 
     /*void add_to_list(GameObject current) {

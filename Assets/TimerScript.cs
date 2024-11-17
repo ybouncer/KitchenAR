@@ -38,6 +38,12 @@ public class TimerScript : MonoBehaviour
         }
         TimeSpan time = TimeSpan.FromSeconds(_currentTime);
         _text.text = time.Minutes.ToString() + " : " + time.Seconds.ToString();
+
+
+        if (_text.text == "0 : 0"){
+            _text.color = Color.red;
+        }
+
     }
 
     public void StartStopTimer(){
