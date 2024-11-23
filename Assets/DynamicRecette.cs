@@ -14,8 +14,10 @@ public class DynamicRecette : MonoBehaviour
     [SerializeField] private TMP_Text _text;
     private int _step = 0;
 
-    string[] cookingWords = { "riz", "tomate", "olive", "carotte","algue", "ail", "champignon","fromage", "mozzarella","cochon","porc","bacon","oeuf","nouille","narutomaki","bol","boule","huile","poireau" };
-    string[] cookingEmojis = { "<sprite=69>", "<sprite=16>", "<sprite=17>","<sprite=22>","<sprite=26>","<sprite=28>","<sprite=30>", "<sprite=41>","<sprite=41>","<sprite=45>","<sprite=45>","<sprite=45>","<sprite=56>","<sprite=71>","<sprite=77>","<sprite=60>","<sprite=36>","<sprite=126>","<sprite=\"poireau\" index=0>" };
+    public int numero_recette = 0;
+
+    string[] cookingWords = { "riz", "tomate", "olive", "carotte","algue", "ail", "champignon","fromage", "mozzarella","cochon","porc","bacon","oeuf","nouille","narutomaki","bol","boule","huile","poireau","farine","sel","saler","gingembre","basilic","épinard","soja","casserole","four" };
+    string[] cookingEmojis = { "<sprite=73>", "<sprite=17>", "<sprite=18>","<sprite=23>","<sprite=27>","<sprite=29>","<sprite=31>", "<sprite=43>","<sprite=43>","<sprite=47>","<sprite=47>","<sprite=47>","<sprite=59>","<sprite=76>","<sprite=81>","<sprite=63>","<sprite=38>","<sprite=33>","<sprite=67>","<sprite=16>","<sprite=50>","<sprite=50>","<sprite=84>","<sprite=101>","<sprite=118>","<sprite=132>","<sprite=133>","<sprite=134>" };
 
     public TextAsset jsonData;
     public RecipeList recipes = new RecipeList();
@@ -42,8 +44,8 @@ public class DynamicRecette : MonoBehaviour
     void Start()
     {
         recipes =  JsonUtility.FromJson<RecipeList>(jsonData.text);
-        Debug.Log(recipes.recipe[1].step[_step]);
-        _text.text = emojify(recipes.recipe[1].step[_step]);
+        _text.text = emojify(recipes.recipe[numero_recette].step[_step]);
+
     }
 
     // Update is called once per frame
@@ -53,10 +55,10 @@ public class DynamicRecette : MonoBehaviour
     }
 
     public void NextStep(){
-        if (_step+1 < recipes.recipe[1].step.Count){
+        if (_step+1 < recipes.recipe[numero_recette].step.Count){
 
             _step = _step+1;
-             _text.text = emojify(recipes.recipe[1].step[_step]);
+            _text.text = emojify(recipes.recipe[numero_recette].step[_step]);
 
         }
         
@@ -67,7 +69,7 @@ public class DynamicRecette : MonoBehaviour
         if (_step-1  >=0 ){
 
             _step = _step-1;
-            _text.text = emojify(recipes.recipe[1].step[_step]);
+            _text.text = emojify(recipes.recipe[numero_recette].step[_step]);
 
         }
     }
@@ -79,25 +81,25 @@ public class DynamicRecette : MonoBehaviour
         for (int i = 0; i < words.Length; i++)
         {
 
-            if (words[i] == "minutes"){
-                print("create timer, value = word[i-1]");
+            string prefix = "";
+
+            if(words[i].IndexOf("'")!=-1){
+                     
+                string test = words[i].Substring(words[i].IndexOf("'")+1, words[i].Length-1 -words[i].IndexOf("'"));
+                words[i]=test;
+                prefix = words[i].Substring(0, words[i].IndexOf("'")+1);
+                    
             }
-
-            if (words[i] == "bouillir"){
-                print("create alert, icon=pot, value = 100°C");
-            }
-            if(words[i].Contains("°C")){
-                print("create alert, icon=oven, value = words[i]");
-            }
-
-
-
             bool found = false;
             for (int j = 0; j < cookingWords.Length; j++)
             {
-                if ((words[i].ToLower() == cookingWords[j]) ||(words[i].ToLower() == cookingWords[j]+"s")||(words[i].ToLower() == cookingWords[j]+"x"))
+                
+
+                int maxAllowedDistance = Math.Max(1, (int)(0.2 * cookingWords[j].Length)); 
+
+                if ((words[i].ToLower() == cookingWords[j]) || GetLevenshteinDistance(words[i].ToLower(), cookingWords[j]) <= maxAllowedDistance )
                 {
-                    outputText += words[i] + cookingEmojis[j] + " ";
+                    outputText += prefix + words[i] + cookingEmojis[j] + " ";
                     found = true;
                     break;
                 }
@@ -113,7 +115,35 @@ public class DynamicRecette : MonoBehaviour
 
     }
 
+    // Function to calculate Levenshtein Distance
+    public int GetLevenshteinDistance(string a, string b)
+    {
+        if (string.IsNullOrEmpty(a)) return b.Length;
+        if (string.IsNullOrEmpty(b)) return a.Length;
 
+        int[,] dp = new int[a.Length + 1, b.Length + 1];
 
+        for (int i = 0; i <= a.Length; i++)
+            dp[i, 0] = i;
+
+        for (int j = 0; j <= b.Length; j++)
+            dp[0, j] = j;
+
+        for (int i = 1; i <= a.Length; i++)
+        {
+            for (int j = 1; j <= b.Length; j++)
+            {
+                int cost = a[i - 1] == b[j - 1] ? 0 : 1;
+
+                dp[i, j] = Math.Min(
+                    Math.Min(dp[i - 1, j] + 1, dp[i, j - 1] + 1),
+                    dp[i - 1, j - 1] + cost
+                );
+            }
+        }
+
+        return dp[a.Length, b.Length];
+    }
 }
+
 

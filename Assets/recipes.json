@@ -14,14 +14,15 @@
 			  ["Sel", "au goût"]
 			],
 			"step": [
-			  "Préchauffer le four à 475°F (245°C).",
-			  "Étaler la pâte à pizza sur une surface légèrement farinée à l'épaisseur désirée.",
-			  "Transférer la pâte sur une pierre à pizza ou une plaque à pâtisserie.",
-			  "Étaler la sauce tomate uniformément sur la pâte, en laissant un petit bord.",
-			  "Garnir de mozzarella râpée.",
-			  "Cuire au four pendant 10 à 15 minutes, ou jusqu'à ce que la croûte soit dorée et le fromage bouillonnant.",
-			  "Retirer du four et garnir de feuilles de basilic frais.",
-			  "Arroser d'huile d'olive extra vierge et saler au goût.",
+				"Voici la recette de nos Pizza margherita",
+			  "Préchauffer le four à 245 °C",
+			  "Étaler la pâte à pizza sur une surface légèrement farinée à l'épaisseur désirée",
+			  "Transférer la pâte sur une pierre à pizza ou une plaque à pâtisserie",
+			  "Étaler la sauce tomate uniformément sur la pâte , en laissant un petit bord",
+			  "Garnir de mozzarella râpée",
+			  "Cuire au four pendant 10 minutes, ou jusqu'à ce que la croûte soit dorée et le fromage bouillonnant",
+			  "Retirer du four et garnir de feuilles de basilic frais",
+			  "Arroser d'huile d'olive extra vierge et saler au goût",
 			  "Servir immédiatement et déguster !"
 			]
 		  },
@@ -43,15 +44,16 @@
 			  ["Gingembre frais, râpé", "1 pouce"]
 			],
 			"step": [
-			  "Faire bouillir de l'eau dans une grande casserole.",
+				"Voici la recette de ramen aux légumes",
+			  "Faire bouillir de l'eau dans une grande casserole",
 			
-				"Ajouter le bouillon de légumes.",
-			  "Ajouter les nouilles ramen et cuire selon les instructions du paquet.",
-			  "Ajouter les carottes, les poireaux et les champignons shiitake au bouillon bouillant.",
-			  "Cuire pendant 5 minutes, ou jusqu'à ce que les légumes soient tendres.",
-			  "Ajouter les épinards et cuire jusqu'à ce que ils soient fanés.",
-			  "Retirer du feu et ajouter la sauce soja, l'huile de sésame, l'ail et le gingembre.",
-			  "Servir immédiatement dans des bols, en garnissant de narutomaki et d'algue nori",
+				"Ajouter le bouillon de légumes",
+			  "Ajouter les nouilles ramen et cuire selon les instructions du paquet",
+			  "Ajouter les carottes , les poireaux et les champignons shiitake au bouillon bouillant",
+			  "Cuire pendant 10 minutes , ou jusqu'à ce que les légumes soient tendres",
+			  "Ajouter les épinards et cuire jusqu'à ce que ils soient fanés",
+			  "Retirer du feu et ajouter la sauce soja , l'huile de sésame , l'ail et le gingembre",
+			  "Servir immédiatement dans des bols , en garnissant de narutomaki et d'algue nori",
 			  "Profiter de votre délicieux ramen aux légumes !"
 			]
 		  }

@@ -1,12 +1,18 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using System;
+using System.IO;
+
 public class add_remove_timer : MonoBehaviour
 {
+    [SerializeField] public TMP_Text _step_text;
+
     public GameObject TimerOriginal;
     public GameObject TimerContainer;
     private int CloneNum = 0;
-    //public List<GameObject> dynamicObjectList = new List<GameObject>();
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,6 +25,21 @@ public class add_remove_timer : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+
+    public void add_when_text(){
+        string[] words = _step_text.text.Split(' ');
+        for (int i = 0; i < words.Length; i++)
+        {
+            if(words[i].Contains("minutes")){
+                remove_all_timer();
+                add_timer();
+                break;
+            }
+           
+        }
     }
 
     public void add_timer(){
@@ -41,11 +62,6 @@ public class add_remove_timer : MonoBehaviour
 
     }
 
-    /*void add_to_list(GameObject current) {
-        if(!dynamicObjectList.Contains(current))
-
-            dynamicObjectList.Add(current);
-    }*/
     
 
 }

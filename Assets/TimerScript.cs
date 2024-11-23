@@ -17,11 +17,12 @@ public class TimerScript : MonoBehaviour
     [SerializeField] private TMP_Text _text;
 
 
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _currentTime = _startMinutes * 60;
-        print("start1");
     }
 
     // Update is called once per frame
@@ -49,10 +50,8 @@ public class TimerScript : MonoBehaviour
     public void StartStopTimer(){
         if (_timerActive == false){
             _timerActive = true;
-            print("start");
         }else{
             _timerActive = false;
-            print("stop");
         }
     }
 
