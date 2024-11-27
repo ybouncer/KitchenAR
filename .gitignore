@@ -60,3 +60,4 @@ Thumbs.db
 
 # MRTK generated files
 Assets/MixedRealityToolkit.Generated/*
+Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset
