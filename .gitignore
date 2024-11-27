@@ -57,3 +57,6 @@ CrashReports/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# MRTK generated files
+Assets/MixedRealityToolkit.Generated/*
