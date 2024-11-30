@@ -43,6 +43,9 @@ Assets/MixedRealityToolkit.Generated/
 # Visual Studio Code settings (optional)
 .vscode/
 
+# Debug files (optional) 
+.utmp/
+
 # Plugin auto-generated files
 *.dll
 *.exe
