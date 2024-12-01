@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
+using System.IO;
+
 
 
 
@@ -42,7 +44,7 @@ public class TimerScript : MonoBehaviour
 
 
         if (_text.text == "0 : 0"){
-            _text.color = Color.red;
+            _text.color =  new Color(1f,0f,0f,1f);
         }
 
     }

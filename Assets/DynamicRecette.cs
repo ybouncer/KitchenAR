@@ -45,7 +45,7 @@ public class DynamicRecette : MonoBehaviour
     {
         recipes =  JsonUtility.FromJson<RecipeList>(jsonData.text);
         _text.text = emojify(recipes.recipe[numero_recette].step[_step]);
-
+        _text.color = new Color(0f,0f,0f,0.9f);
     }
 
     // Update is called once per frame
