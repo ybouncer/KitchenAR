@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 254064772}
-  _fingerFeatureStateProvider: {fileID: 0}
+  _fingerFeatureStateProvider: {fileID: 1104718396}
   _shapes:
   - {fileID: 11400000, guid: 63f0c3c81e3960f43914dc93f26c1ef3, type: 2}
 --- !u!114 &254064772
@@ -362,6 +362,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 542472196}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1104718396 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2580441569135507087, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
+  m_PrefabInstance: {fileID: 1965672050}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b942c16a6d6a4edaad7c18c7d5762cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1499222100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7192818547691462808, guid: f39a9d103c4129b42a53567f6cd8356a, type: 3}
@@ -533,7 +544,7 @@ MonoBehaviour:
   _selector: {fileID: 254064773}
   _renderer: {fileID: 1625125888}
   _normalColor: {r: 1, g: 0, b: 0, a: 1}
-  _selectColor: {r: 0, g: 1, b: 0, a: 1}
+  _selectColor: {r: 0.11320752, g: 0.09861157, b: 0.09861157, a: 1}
 --- !u!1 &1667349996
 GameObject:
   m_ObjectHideFlags: 0
