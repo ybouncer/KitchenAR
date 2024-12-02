@@ -5,7 +5,8 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
     private OVRGrabbable grabbable; // Référence au composant OVRGrabbable
     private SpriteRenderer spriteRenderer; // Référence au SpriteRenderer
     private Color originalColor; // Sauvegarde la couleur d'origine
-    private int rotation = transform.rotation.x; // Sauvegarde la rotation en x
+    private int rotation; // Sauvegarde la rotation en x
+    private int newRotation = 90; // Nouvelle rotation en x
 
     void Start()
     {
@@ -19,12 +20,13 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
         {
             originalColor = spriteRenderer.color; // Sauvegarder la couleur d'origine
         }
+
+        // Initialiser la rotation
+        rotation = (int)transform.rotation.eulerAngles.x;
     }
 
     void Update()
     {
-        private int newRotation = 90; 
-
         // Vérifier si l'objet est attrapé
         if (grabbable.isGrabbed && rotation == 0)
         {
@@ -38,7 +40,7 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
     }
 
     // Fonction pour changer l'opacité
-    private void SetOpacity(float alpha)
+    void SetOpacity(float alpha)
     {
         if (spriteRenderer != null)
         {
