@@ -1,0 +1,73 @@
+{
+	"recipes": [
+	  {
+		"name": "Pizza Margherita",
+		"yield": "2 portions",
+		"prepTime": "15 minutes",
+		"cookTime": "15 minutes",
+		"ingredients": [
+		  ["Pizza dough", "1 ball"],
+		  ["Tomato sauce", "1/2 cup"],
+		  ["Fresh mozzarella cheese, shredded", "1 cup"],
+		  ["Fresh basil leaves", "8-10 leaves"],
+		  ["Extra virgin olive oil", "2 tablespoons"],
+		  ["Salt", "to taste"]
+		],
+		"steps": [
+		  "Here is the recipe for our Pizza Margherita.",
+		  "Preheat the oven to 245°C (475°F).",
+		  "Roll out the pizza dough on a lightly floured surface to your desired thickness.",
+		  "Transfer the dough to a pizza stone or baking sheet.",
+		  "Spread the tomato sauce evenly on the dough, leaving a small border.",
+		  "Top with shredded mozzarella cheese.",
+		  "Bake in the oven for 10 minutes, or until the crust is golden and the cheese is bubbling.",
+		  "Remove from the oven and garnish with fresh basil leaves.",
+		  "Drizzle with extra virgin olive oil and salt to taste.",
+		  "Serve immediately and enjoy!"
+		],
+		"nutritionFacts": {
+		  "calories": "250",
+		  "carbohydrates": "30",
+		  "fats": "9",
+		  "proteins": "8"
+		}
+	  },
+	  {
+		"name": "Vegetable Ramen",
+		"yield": "2 portions",
+		"prepTime": "20 minutes",
+		"cookTime": "10 minutes",
+		"ingredients": [
+		  ["Ramen noodles", "2 packets"],
+		  ["Vegetable broth", "4 cups"],
+		  ["Shredded carrots", "1 cup"],
+		  ["Leeks, sliced", "1 cup"],
+		  ["Shiitake mushrooms, sliced", "1/2 cup"],
+		  ["Fresh spinach", "1 cup"],
+		  ["Soy sauce", "2 tablespoons"],
+		  ["Sesame oil", "1 teaspoon"],
+		  ["Garlic, minced", "1 clove"],
+		  ["Fresh ginger, grated", "1 inch piece"]
+		],
+		"steps": [
+		  "Here is the recipe for Vegetable Ramen.",
+		  "Boil water in a large pot.",
+		  "Add the vegetable broth to the boiling water.",
+		  "Add the ramen noodles and cook according to package instructions.",
+		  "Add the carrots, leeks, and shiitake mushrooms to the boiling broth.",
+		  "Cook for 10 minutes, or until the vegetables are tender.",
+		  "Add the spinach and cook until wilted.",
+		  "Remove from heat and add the soy sauce, sesame oil, garlic, and ginger.",
+		  "Serve immediately in bowls, garnished with narutomaki (fish cakes) and nori (seaweed).",
+		  "Enjoy your delicious Vegetable Ramen!"
+		],
+		"nutritionFacts": {
+		  "calories": "66",
+		  "carbohydrates": "12.75",
+		  "fats": "0.85",
+		  "proteins": "1.91"
+		}
+	  }
+	]
+  }
+  
