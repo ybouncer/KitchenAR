@@ -3787,7 +3787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _handGrabState: {fileID: 870332499}
-  _syntheticHand: {fileID: 0}
+  _syntheticHand: {fileID: 1717288370}
 --- !u!4 &780880853 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4515130557893472, guid: c6a74181d4000004887343fb87b3c53a, type: 3}
@@ -8886,7 +8886,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _handGrabState: {fileID: 1494538757}
-  _syntheticHand: {fileID: 0}
+  _syntheticHand: {fileID: 1740081447}
 --- !u!1 &1595470032
 GameObject:
   m_ObjectHideFlags: 0
