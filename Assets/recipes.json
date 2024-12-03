@@ -36,7 +36,7 @@
 		"name": "Vegetable Ramen",
 		"yield": "2 portions",
 		"prepTime": "20 minutes",
-		"cookTime": "10 minutes",
+		"cookTime": "30 minutes",
 		"ingredients": [
 		  ["Ramen noodles", "2 packets"],
 		  ["Vegetable broth", "4 cups"],
