@@ -1,73 +1,143 @@
 {
 	"recipes": [
-	  {
-		"name": "Pizza Margherita",
-		"yield": "2 portions",
-		"prepTime": "15 minutes",
-		"cookTime": "15 minutes",
-		"ingredients": [
-		  ["Pizza dough", "1 ball"],
-		  ["Tomato sauce", "1/2 cup"],
-		  ["Fresh mozzarella cheese, shredded", "1 cup"],
-		  ["Fresh basil leaves", "8-10 leaves"],
-		  ["Extra virgin olive oil", "2 tablespoons"],
-		  ["Salt", "to taste"]
-		],
-		"steps": [
-		  "Here is the recipe for our Pizza Margherita.",
-		  "Preheat the oven to 245°C (475°F).",
-		  "Roll out the pizza dough on a lightly floured surface to your desired thickness.",
-		  "Transfer the dough to a pizza stone or baking sheet.",
-		  "Spread the tomato sauce evenly on the dough, leaving a small border.",
-		  "Top with shredded mozzarella cheese.",
-		  "Bake in the oven for 10 minutes, or until the crust is golden and the cheese is bubbling.",
-		  "Remove from the oven and garnish with fresh basil leaves.",
-		  "Drizzle with extra virgin olive oil and salt to taste.",
-		  "Serve immediately and enjoy!"
-		],
-		"nutritionFacts": {
-		  "calories": "250",
-		  "carbohydrates": "30",
-		  "fats": "9",
-		  "proteins": "8"
+		{
+			"name": "Pizza Margherita",
+			"yield": "2 portions",
+			"prepTime": "15 minutes",
+			"cookTime": "15 minutes",
+			"ingredients": [
+				["Pizza dough", "1 ball"],
+				["Tomato sauce", "1/2 cup"],
+				["Fresh mozzarella cheese balls", "1 cup"],
+				["Fresh basil leaves", "8-10 leaves"],
+				["Extra-virgin olive oil", "2 tablespoons"],
+				["Flaky Sea Salt", "A sprinkle"]
+			],
+			"steps": [
+				"Here is the recipe for our Pizza Margherita.",
+				"Preheat the oven to 245°C (475°F).",
+				"Roll out the pizza dough on a lightly floured surface to your desired thickness.",
+				"Transfer the dough to a pizza stone or baking sheet.",
+				"Spread the tomato sauce evenly on the dough, leaving a small border.",
+				"Top with shredded mozzarella cheese.",
+				"Bake in the oven for 10 minutes, or until the crust is golden and the cheese is bubbling.",
+				"Remove from the oven and garnish with fresh basil leaves.",
+				"Drizzle with extra virgin olive oil and salt to taste.",
+				"Serve immediately and enjoy!"
+			],
+			"nutritionFacts": {
+				"calories": "266",
+				"carbohydrates": "33",
+				"fats": "10",
+				"proteins": "11"
+			}
+		},
+		{
+			"name": "Vegetable Ramen",
+			"yield": "2 portions",
+			"prepTime": "20 minutes",
+			"cookTime": "30 minutes",
+			"ingredients": [
+				["Ramen noodles", "2 packets"],
+				["Vegetable broth", "4 cups"],
+				["Shredded carrots", "1 cup"],
+				["Leeks, sliced", "1 cup"],
+				["Shiitake mushrooms, sliced", "1/2 cup"],
+				["Fresh spinach", "1 cup"],
+				["Soy sauce", "2 tablespoons"],
+				["Sesame oil", "1 teaspoon"],
+				["Garlic, minced", "1 clove"],
+				["Fresh ginger, grated", "1 inch piece"]
+			],
+			"steps": [
+				"Here is the recipe for Vegetable Ramen.",
+				"Boil water in a large pot.",
+				"Add the vegetable broth to the boiling water.",
+				"Add the ramen noodles and cook according to package instructions.",
+				"Add the carrots, leeks, and shiitake mushrooms to the boiling broth.",
+				"Cook for 10 minutes, or until the vegetables are tender.",
+				"Add the spinach and cook until wilted.",
+				"Remove from heat and add the soy sauce, sesame oil, garlic, and ginger.",
+				"Serve immediately in bowls, garnished with narutomaki (fish cakes) and nori (seaweed).",
+				"Enjoy your delicious Vegetable Ramen!"
+			],
+			"nutritionFacts": {
+				"calories": "436",
+				"carbohydrates": "63",
+				"fats": "16",
+				"proteins": "1"
+			}
+		},
+		{
+			"name": "Beef Wellington",
+			"yield": "4-6 portions",
+			"prepTime": "1 hour",
+			"cookTime": "35 minutes",
+			"ingredients": [
+				["Beef tenderloin (center-cut)", "2 lbs (900 g)"],
+				["Salt", "to taste"],
+				["Black pepper", "to taste"],
+				["Olive oil", "2 tablespoons"],
+				["Mushrooms (button or cremini), finely chopped", "1 lb (450 g)"],
+				["Shallots, finely diced", "2"],
+				["Fresh thyme", "1 teaspoon"],
+				["Prosciutto", "10-12 slices"],
+				["Dijon mustard", "2 tablespoons"],
+				["Puff pastry", "1 sheet"],
+				["Egg yolks, beaten", "2"],
+				["Flour", "for dusting"],
+				["Butter", "1 tablespoon"]
+			],
+			"steps": [
+				"Here is the recipe for Beef Wellington.",
+				"Season the beef with salt and pepper. Sear it in hot olive oil until browned on all sides (about 1 minute per side). Remove and brush with Dijon mustard. Let cool completely.",
+				"In a pan, melt butter and sauté mushrooms, shallots, and thyme over medium heat until all moisture is cooked out (about 10 minutes). Season with salt and pepper, then let cool.",
+				"Lay out plastic wrap on a clean surface. Arrange the prosciutto slices in an overlapping layer. Spread the mushroom duxelles evenly over the prosciutto.",
+				"Place the beef on top and tightly roll the layers around it using the plastic wrap. Chill in the fridge for 30 minutes.",
+				"Roll out the puff pastry on a floured surface. Remove the beef from the plastic wrap and place it on the pastry. Wrap the pastry around the beef, sealing the edges with egg wash. Trim excess pastry.",
+				"Brush the entire pastry with egg wash. Optionally, score patterns into the pastry with a knife.",
+				"Preheat the oven to 400°F (200°C). Place the Wellington on a baking sheet and bake for 30-35 minutes (internal temp should be 125°F/50°C for medium-rare).",
+				"Rest for 10 minutes before slicing. Enjoy your delicious Beef Wellington!"
+			],
+			"nutritionFacts": {
+				"calories": "368",
+				"carbohydrates": "10",
+				"fats": "27",
+				"proteins": "19"
+			}
+		},
+		{
+			"name": "Sichuan Dan Dan Noodles",
+			"yield": "2 portions",
+			"prepTime": "20 minutes",
+			"cookTime": "20 minutes",
+			"ingredients": [
+				["Chinese sesame paste (or tahini)", "2 tablespoons"],
+				["Soy sauce", "2 tablespoons"],
+				["Chinkiang black vinegar", "1 tablespoon"],
+				["Sichuan chili oil", "3 tablespoons"],
+				["Garlic, minced", "2 cloves"],
+				["Ground Sichuan peppercorns", "1 teaspoon"],
+				["Fresh Chinese noodles", "200 g"],
+				["Ground pork", "150 g"],
+				["Fermented mustard greens (Zha Cai), chopped", "1/4 cup"],
+				["Vegetable oil", "2 tablespoons"],
+				["Green onions, sliced", "2"]
+			],
+			"steps": [
+				"Here is the recipe for Sichuan Dan Dan Noodles.",
+				"In a bowl, whisk sesame paste, soy sauce, vinegar, chili oil, garlic, and Sichuan peppercorns into a smooth paste.",
+				"Heat oil in a skillet and cook ground pork until browned. Add chopped mustard greens and stir-fry for 1-2 minutes.",
+				"Boil the noodles according to package instructions and drain.",
+				"Divide the sauce between two bowls. Add noodles, toss to coat, and top with pork mixture.",
+				"Garnish with green onions and additional chili oil for extra heat. Enjoy your spicy Sichuan Dan Dan Noodles!"
+			],
+			"nutritionFacts": {
+				"calories": "455",
+				"carbohydrates": "54",
+				"fats": "21",
+				"proteins": "14"
+			}
 		}
-	  },
-	  {
-		"name": "Vegetable Ramen",
-		"yield": "2 portions",
-		"prepTime": "20 minutes",
-		"cookTime": "30 minutes",
-		"ingredients": [
-		  ["Ramen noodles", "2 packets"],
-		  ["Vegetable broth", "4 cups"],
-		  ["Shredded carrots", "1 cup"],
-		  ["Leeks, sliced", "1 cup"],
-		  ["Shiitake mushrooms, sliced", "1/2 cup"],
-		  ["Fresh spinach", "1 cup"],
-		  ["Soy sauce", "2 tablespoons"],
-		  ["Sesame oil", "1 teaspoon"],
-		  ["Garlic, minced", "1 clove"],
-		  ["Fresh ginger, grated", "1 inch piece"]
-		],
-		"steps": [
-		  "Here is the recipe for Vegetable Ramen.",
-		  "Boil water in a large pot.",
-		  "Add the vegetable broth to the boiling water.",
-		  "Add the ramen noodles and cook according to package instructions.",
-		  "Add the carrots, leeks, and shiitake mushrooms to the boiling broth.",
-		  "Cook for 10 minutes, or until the vegetables are tender.",
-		  "Add the spinach and cook until wilted.",
-		  "Remove from heat and add the soy sauce, sesame oil, garlic, and ginger.",
-		  "Serve immediately in bowls, garnished with narutomaki (fish cakes) and nori (seaweed).",
-		  "Enjoy your delicious Vegetable Ramen!"
-		],
-		"nutritionFacts": {
-		  "calories": "66",
-		  "carbohydrates": "12.75",
-		  "fats": "0.85",
-		  "proteins": "1.91"
-		}
-	  }
 	]
-  }
-  
+}
