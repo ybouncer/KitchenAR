@@ -10311,8 +10311,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 624724755}
   parentbook: {fileID: 0}
-  CanvasLeft: {fileID: 0}
-  CanvasRight: {fileID: 0}
+  CanvasLeft1: {fileID: 0}
+  CanvasLeft2: {fileID: 0}
+  CanvasRight1: {fileID: 0}
+  CanvasRight2: {fileID: 0}
   hinge: {fileID: 624724757}
 --- !u!1 &643566781
 GameObject:
@@ -10802,7 +10804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &685293169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13983,8 +13985,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 487319964}
   parentbook: {fileID: 1434510282}
-  CanvasLeft: {fileID: 1469217523}
-  CanvasRight: {fileID: 478132463}
+  CanvasLeft1: {fileID: 1469217523}
+  CanvasLeft2: {fileID: 1801001842}
+  CanvasRight1: {fileID: 478132463}
+  CanvasRight2: {fileID: 572233686}
   hinge: {fileID: 1957485508}
 --- !u!114 &861968465
 MonoBehaviour:
@@ -24333,8 +24337,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 0}
   parentbook: {fileID: 0}
-  CanvasLeft: {fileID: 0}
-  CanvasRight: {fileID: 0}
+  CanvasLeft1: {fileID: 0}
+  CanvasLeft2: {fileID: 0}
+  CanvasRight1: {fileID: 0}
+  CanvasRight2: {fileID: 0}
   hinge: {fileID: 0}
 --- !u!1 &1546040365 stripped
 GameObject:
@@ -30772,8 +30778,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   book: {fileID: 487319964}
   parentbook: {fileID: 1434510282}
-  CanvasLeft: {fileID: 1469217523}
-  CanvasRight: {fileID: 0}
+  CanvasLeft1: {fileID: 1469217523}
+  CanvasLeft2: {fileID: 1801001842}
+  CanvasRight1: {fileID: 478132463}
+  CanvasRight2: {fileID: 572233686}
   hinge: {fileID: 1957485508}
 --- !u!114 &1957485511
 MonoBehaviour:

@@ -4,79 +4,48 @@ public class BookShowHide : MonoBehaviour
 {
     public GameObject book;
     public GameObject parentbook;
-    public GameObject CanvasLeft;
-    public GameObject CanvasRight;
+    public GameObject CanvasLeft1;
+    public GameObject CanvasLeft2;
+    public GameObject CanvasRight1;
+    public GameObject CanvasRight2;
     public HingeJoint hinge;
 
     // Method to hide elements
     public void Hide()
     {
-        // Hide all renderers of the child objects
-        foreach (Transform child in parentbook.transform)
-        {
-            Renderer childrend = child.GetComponent<Renderer>();
-            if (childrend != null)
-            {
-                childrend.enabled = false; // Disable renderers to hide
-            }
-        }
-
         // Hide Canvas elements
-        CanvasLeft.SetActive(false);
-        CanvasRight.SetActive(false);
-
-        // Optionally, disable the hinge motor if needed
-        if (hinge != null)
-        {
-            var hingeComponent = book.GetComponent<HingeJoint>();
-            if (hingeComponent != null)
-            {
-                hingeComponent.useMotor = false;
-            }
+        if (CanvasLeft1.activeSelf) {
+            CanvasLeft1.SetActive(false);
+            var LastCanvasLeft = CanvasLeft1
+        }
+        if (CanvasLeft2.activeSelf) {
+            CanvasLeft2.SetActive(false);
+            var LastCanvasLeft = CanvasLeft2
+        }
+        if (CanvasRight1.activeSelf) {
+            CanvasRight1.SetActive(false);
+            var LastCanvasRight = CanvasRight1
+        }
+        if (CanvasRight2.activeSelf) {
+            CanvasRight2.SetActive(false);
+            var LastCanvasRight = CanvasRight2
         }
     }
-
     // Method to show elements
     public void Show()
     {
-        // Show all renderers of the child objects
-        foreach (Transform child in parentbook.transform)
-        {
-            Renderer childrend = child.GetComponent<Renderer>();
-            if (childrend != null)
-            {
-                childrend.enabled = true; // Enable renderers to show
-            }
+        // Hide Canvas elements
+        if (!CanvasLeft1.activeSelf) {
+            CanvasLeft1.SetActive(true);
         }
-
-        // Show Canvas elements
-        CanvasLeft.SetActive(true);
-        CanvasRight.SetActive(true);
-
-        // Optionally, enable the hinge motor if needed
-        if (hinge != null)
-        {
-            var hingeComponent = book.GetComponent<HingeJoint>();
-            if (hingeComponent != null)
-            {
-                hingeComponent.useMotor = true;
-            }
+        if (!CanvasLeft2.activeSelf) {
+            CanvasLeft2.SetActive(true);
         }
-    }
-
-void DisableRenderers(GameObject parentObject)
-    {
-        // Disable the Renderer component for the current GameObject
-        Renderer renderer = parentObject.GetComponent<Renderer>();
-        if (renderer != null)
-        {
-            renderer.enabled = false;
+        if (!CanvasRight1.activeSelf) {
+            CanvasRight1.SetActive(true);
         }
-
-        // Recursively call the function for each child of the current GameObject
-        foreach (Transform child in parentObject.transform)
-        {
-            DisableRenderers(child.gameObject); // Recursion: process each child GameObject
+        if (!CanvasRight2.activeSelf) {
+            CanvasRight2.SetActive(true);
         }
     }
 }
