@@ -9,13 +9,25 @@ public class BookShowHide : MonoBehaviour
     public GameObject CanvasRight1;
     public GameObject CanvasRight2;
     public HingeJoint hinge;
+    public int PageActive;
 
     // Method to hide elements
     public void Hide()
     {
+
+        if (hinge != null) {
+            var hinge = book.GetComponent<HingeJoint>();
+            hinge.useMotor = false;
+        }
+        
+        foreach (Transform child in parentbook.transform) {
+            Renderer childrend = child.GetComponent<Renderer>();
+            childrend.enabled = false;
+        }    
         // Hide Canvas elements
         if (CanvasLeft1.activeSelf) {
             CanvasLeft1.SetActive(false);
+<<<<<<< Updated upstream
             var LastCanvasLeft = CanvasLeft1;
         }
         if (CanvasLeft2.activeSelf) {
@@ -29,22 +41,37 @@ public class BookShowHide : MonoBehaviour
         if (CanvasRight2.activeSelf) {
             CanvasRight2.SetActive(false);
             var LastCanvasRight = CanvasRight2;
+=======
+            CanvasRight1.SetActive(false);
+            PageActive = 1;
+        }
+        if (CanvasRight2.activeSelf) {
+            CanvasRight2.SetActive(false);
+            CanvasLeft2.SetActive(false);
+            PageActive = 2;
+>>>>>>> Stashed changes
         }
     }
     // Method to show elements
     public void Show()
     {
-        // Hide Canvas elements
-        if (!CanvasLeft1.activeSelf) {
+
+        if (hinge != null) {
+            var hinge = book.GetComponent<HingeJoint>();
+            hinge.useMotor = false;
+        }
+        
+        foreach (Transform child in parentbook.transform) {
+            Renderer childrend = child.GetComponent<Renderer>();
+            childrend.enabled = true;
+        }
+
+        // Show Canvas elements
+        if(PageActive == 1) {
             CanvasLeft1.SetActive(true);
-        }
-        if (!CanvasLeft2.activeSelf) {
-            CanvasLeft2.SetActive(true);
-        }
-        if (!CanvasRight1.activeSelf) {
             CanvasRight1.SetActive(true);
-        }
-        if (!CanvasRight2.activeSelf) {
+        } else {
+            CanvasLeft2.SetActive(true);
             CanvasRight2.SetActive(true);
         }
     }

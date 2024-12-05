@@ -13990,6 +13990,7 @@ MonoBehaviour:
   CanvasRight1: {fileID: 478132463}
   CanvasRight2: {fileID: 572233686}
   hinge: {fileID: 1957485508}
+  PageActive: 0
 --- !u!114 &861968465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15217,7 +15218,7 @@ MonoBehaviour:
   m_Handedness: 0
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
-  m_DisableVisualsWhenBlockedInGroup: 1
+  m_DisableVisualsWhenBlockedInGroup: 0
   m_StartingSelectedInteractable: {fileID: 0}
   m_StartingTargetFilter: {fileID: 0}
   m_HoverEntered:
@@ -20130,15 +20131,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8565196945761156478, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8565196945761156478, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0028
+      value: 0.012
       objectReference: {fileID: 0}
     - target: {fileID: -8565196945761156478, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8565196945761156478, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20182,11 +20183,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6397470963468183174, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6397470963468183174, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6397470963468183174, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_LocalPosition.z

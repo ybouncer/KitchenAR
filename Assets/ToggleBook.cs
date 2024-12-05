@@ -19,7 +19,7 @@ public class ToggleBook : MonoBehaviour
         
         foreach (Transform child in parentbook.transform) {
             Renderer childrend = child.GetComponent<Renderer>();
-            childrend.enabled = !childrend.enabled;
+            childrend.enabled = true;
         }
         CanvasLeft1.SetActive(true);
         CanvasLeft2.SetActive(false);
