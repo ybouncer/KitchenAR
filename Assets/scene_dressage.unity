@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 116252478}
   - component: {fileID: 116252477}
   m_Layer: 0
-  m_Name: pizzaFamille
+  m_Name: Famille
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -339,7 +339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightThumb: {fileID: 1225410213}
   rightIndex: {fileID: 1225410211}
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 116252476}
   initialDistance: 0
   initialScale: {x: 0, y: 0, z: 0}
 --- !u!114 &116252478
@@ -2006,8 +2006,9 @@ GameObject:
   - component: {fileID: 1125458522}
   - component: {fileID: 1125458521}
   - component: {fileID: 1125458520}
+  - component: {fileID: 1125458524}
   m_Layer: 0
-  m_Name: pizzaStyle
+  m_Name: Style
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2161,6 +2162,23 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1125458524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125458517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa395b4579e347b45bdb9f8a38651a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightThumb: {fileID: 1225410213}
+  rightIndex: {fileID: 1225410211}
+  targetObject: {fileID: 1125458519}
+  initialDistance: 0
+  initialScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1139113255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,8 +3782,9 @@ GameObject:
   - component: {fileID: 1725240123}
   - component: {fileID: 1725240122}
   - component: {fileID: 1725240121}
+  - component: {fileID: 1725240125}
   m_Layer: 0
-  m_Name: pizzaGastro
+  m_Name: Gastro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3919,6 +3938,23 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+--- !u!114 &1725240125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725240118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e022e92189ebe954e97da0ec831978d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightThumb: {fileID: 1225410213}
+  rightIndex: {fileID: 1225410211}
+  targetObject: {fileID: 1725240120}
+  initialDistance: 0
+  initialScale: {x: 0, y: 0, z: 0}
 --- !u!4 &1732410181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5310702087570344806, guid: 58011bca9681c484080084eccc4cb150, type: 3}
