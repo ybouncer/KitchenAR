@@ -47,7 +47,7 @@ MonoBehaviour:
         Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput
     componentName: Windows Speech Input
     priority: 0
-    runtimePlatform: 25
+    runtimePlatform: 57
     deviceManagerProfile: {fileID: 0}
   - componentType:
       reference: Microsoft.MixedReality.Toolkit.Windows.Input.WindowsDictationInputProvider,
@@ -110,10 +110,10 @@ MonoBehaviour:
   focusIndividualCompoundCollider: 0
   inputActionsProfile: {fileID: 11400000, guid: 723eb97b02944311b92861f473eee53e, type: 2}
   inputActionRulesProfile: {fileID: 11400000, guid: 03945385d89102f41855bc8f5116b199, type: 2}
-  pointerProfile: {fileID: 11400000, guid: 48aa63a9725047b28d4137fd0834bc31, type: 2}
-  gesturesProfile: {fileID: 11400000, guid: bd7829a9b29409045a745b5a18299291, type: 2}
+  pointerProfile: {fileID: 11400000, guid: 94d82d6caf11fcf4e8de2ee367d1e1b5, type: 2}
+  gesturesProfile: {fileID: 11400000, guid: e3f7f31dcd2ba96419e98d49b32514a1, type: 2}
   speechCommandsProfile: {fileID: 11400000, guid: 97463ac4e3923cc4a9df1d646fee28e0, type: 2}
-  enableControllerMapping: 1
+  enableControllerMapping: 0
   controllerMappingProfile: {fileID: 11400000, guid: 39ded1fd0711a0c448413d0e1ec4f7f3, type: 2}
   controllerVisualizationProfile: {fileID: 11400000, guid: 345c06fdf3732db46b96299bd3cba653, type: 2}
   handTrackingProfile: {fileID: 11400000, guid: 7f1e3cd673742f94ca860ac7ae733024, type: 2}

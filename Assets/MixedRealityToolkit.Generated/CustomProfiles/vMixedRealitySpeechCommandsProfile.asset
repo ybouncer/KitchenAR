@@ -20,9 +20,9 @@ MonoBehaviour:
     keyword: Menu
     keyCode: 51
     action:
-      id: 2
-      description: Menu
-      axisConstraint: 2
+      id: 0
+      description: None
+      axisConstraint: 0
   - localizationKey: 
     keyword: Select
     keyCode: 49
@@ -47,6 +47,48 @@ MonoBehaviour:
   - localizationKey: 
     keyword: Make Planes
     keyCode: 52
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Next
+    keyCode: 0
+    action:
+      id: 2
+      description: Menu
+      axisConstraint: 2
+  - localizationKey: 
+    keyword: Previous
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Hide
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Show
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Open
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Close
+    keyCode: 0
     action:
       id: 0
       description: None
