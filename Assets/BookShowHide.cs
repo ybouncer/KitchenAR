@@ -27,21 +27,6 @@ public class BookShowHide : MonoBehaviour
         // Hide Canvas elements
         if (CanvasLeft1.activeSelf) {
             CanvasLeft1.SetActive(false);
-<<<<<<< Updated upstream
-            var LastCanvasLeft = CanvasLeft1;
-        }
-        if (CanvasLeft2.activeSelf) {
-            CanvasLeft2.SetActive(false);
-            var LastCanvasLeft = CanvasLeft2;
-        }
-        if (CanvasRight1.activeSelf) {
-            CanvasRight1.SetActive(false);
-            var LastCanvasRight = CanvasRight1;
-        }
-        if (CanvasRight2.activeSelf) {
-            CanvasRight2.SetActive(false);
-            var LastCanvasRight = CanvasRight2;
-=======
             CanvasRight1.SetActive(false);
             PageActive = 1;
         }
@@ -49,7 +34,6 @@ public class BookShowHide : MonoBehaviour
             CanvasRight2.SetActive(false);
             CanvasLeft2.SetActive(false);
             PageActive = 2;
->>>>>>> Stashed changes
         }
     }
     // Method to show elements
