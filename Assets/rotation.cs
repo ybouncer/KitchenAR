@@ -13,6 +13,7 @@ public class HandRotationDetector : MonoBehaviour
     public int Debugint = 1; // Initial portion count (e.g., 1 portion)
 
     private TextMeshProUGUI portionText; // Reference to the TextMeshPro component
+    private UpdateIngredientsForPortions ingredientUpdater; // Reference to UpdateIngredientsForPortions script
 
     void Start()
     {
@@ -46,6 +47,13 @@ public class HandRotationDetector : MonoBehaviour
 
         // Initialize with the current rotation
         previousRotation = leftHand.transform.rotation;
+
+        // Find the UpdateIngredientsForPortions script
+        ingredientUpdater = FindFirstObjectByType<UpdateIngredientsForPortions>();
+        if (ingredientUpdater == null)
+        {
+            Debug.LogError("UpdateIngredientsForPortions script not found in the scene.");
+        }
     }
 
     void Update()
@@ -90,6 +98,7 @@ public class HandRotationDetector : MonoBehaviour
                 {
                     Debugint -= 1;
                     UpdatePortionText();
+                    UpdateIngredientTexts(); // Update the ingredients based on new portions
                 }
             }
             else
@@ -97,6 +106,7 @@ public class HandRotationDetector : MonoBehaviour
                 Debug.Log("Counterclockwise rotation detected!");
                 Debugint += 1;
                 UpdatePortionText();
+                UpdateIngredientTexts(); // Update the ingredients based on new portions
             }
 
             Debug.Log("Portion count: " + Debugint);
@@ -116,6 +126,19 @@ public class HandRotationDetector : MonoBehaviour
         else
         {
             Debug.LogError("TextMeshProUGUI component not found on NumberPortions GameObject.");
+        }
+    }
+
+    // Call this method to update the ingredient texts based on new portion count
+    private void UpdateIngredientTexts()
+    {
+        if (ingredientUpdater != null)
+        {
+            ingredientUpdater.UpdateIngredientTexts(); // Update ingredient values based on portions
+        }
+        else
+        {
+            Debug.LogError("IngredientUpdater script is not assigned or found.");
         }
     }
 }

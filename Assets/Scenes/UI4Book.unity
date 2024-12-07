@@ -2079,8 +2079,8 @@ MonoBehaviour:
   leftHand: {fileID: 937007874}
   targetObject: {fileID: 1305335346}
   playerCamera: {fileID: 38236942}
-  numberPortions: {fileID: 0}
-  Debugint: 0
+  numberPortions: {fileID: 713508050}
+  Debugint: 1
 --- !u!4 &134124243
 Transform:
   m_ObjectHideFlags: 0
@@ -2667,6 +2667,60 @@ Transform:
   - {fileID: 893868401}
   m_Father: {fileID: 721911869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &176716878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 176716879}
+  - component: {fileID: 176716880}
+  m_Layer: 0
+  m_Name: UpdateIngredientValues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &176716879
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176716878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1585250963}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &176716880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176716878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ef475d916adba4093d0c2e9f70ba40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzaDoughText: {fileID: 0}
+  tomatoSauceText: {fileID: 0}
+  mozzarellaText: {fileID: 0}
+  basilLeavesText: {fileID: 0}
+  oliveOilText: {fileID: 0}
+  portionsText: {fileID: 0}
 --- !u!1 &178225836
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,6 +4095,8 @@ GameObject:
   m_Component:
   - component: {fileID: 257378859}
   - component: {fileID: 257378860}
+  - component: {fileID: 257378863}
+  - component: {fileID: 257378862}
   m_Layer: 0
   m_Name: HandFeaturesLeft
   m_TagString: Untagged
@@ -4076,6 +4132,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 830001233}
+--- !u!114 &257378862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257378858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 830001233}
+  _hmd: {fileID: 551772954}
+  _trackingToWorldTransformer: {fileID: 365980470}
+  _disableProactiveEvaluation: 0
+--- !u!114 &257378863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257378858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b942c16a6d6a4edaad7c18c7d5762cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 830001233}
+  _fingerStateThresholds:
+  - Finger: 0
+    StateThresholds: {fileID: 11400000, guid: 1ee82d2d63daf8b4c93040e331f8e801, type: 2}
+  - Finger: 1
+    StateThresholds: {fileID: 11400000, guid: 29b0a95ffa0254044901c8c821379040, type: 2}
+  - Finger: 2
+    StateThresholds: {fileID: 11400000, guid: 6654d266dec806d458e8c45751c96535, type: 2}
+  - Finger: 3
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  - Finger: 4
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  _disableProactiveEvaluation: 0
 --- !u!1 &257810521
 GameObject:
   m_ObjectHideFlags: 0
@@ -9822,7 +9919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 587539084}
-  _transformFeatureStateProvider: {fileID: 1012680806}
+  _transformFeatureStateProvider: {fileID: 0}
   _transformFeatureConfigs:
     _values:
     - _mode: 0
@@ -11348,7 +11445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &685293169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15071,6 +15168,8 @@ GameObject:
   - component: {fileID: 861968464}
   - component: {fileID: 861968465}
   - component: {fileID: 861968466}
+  - component: {fileID: 861968468}
+  - component: {fileID: 861968467}
   m_Layer: 0
   m_Name: VoiceAndGestureHandler
   m_TagString: Untagged
@@ -15162,6 +15261,38 @@ MonoBehaviour:
   ingredientsPanel: {fileID: 0}
   bookLeft: {fileID: 0}
   bookRight: {fileID: 0}
+--- !u!114 &861968467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861968461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735fe658f2800a84b92cfc514cb72cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 861968468}
+--- !u!114 &861968468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861968461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0ef475d916adba4093d0c2e9f70ba40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pizzaDoughText: {fileID: 981621794}
+  tomatoSauceText: {fileID: 1055878662}
+  mozzarellaText: {fileID: 735982309}
+  basilLeavesText: {fileID: 948770539}
+  oliveOilText: {fileID: 1032588797}
+  portionsText: {fileID: 713508052}
 --- !u!1 &864521201
 GameObject:
   m_ObjectHideFlags: 0
@@ -17771,7 +17902,6 @@ GameObject:
   - component: {fileID: 1012680804}
   - component: {fileID: 1012680805}
   - component: {fileID: 1012680807}
-  - component: {fileID: 1012680806}
   m_Layer: 0
   m_Name: HandFeaturesRight
   m_TagString: Untagged
@@ -17807,22 +17937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 756959377}
---- !u!114 &1012680806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012680803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _hand: {fileID: 756959377}
-  _hmd: {fileID: 551772954}
-  _trackingToWorldTransformer: {fileID: 365980470}
-  _disableProactiveEvaluation: 0
 --- !u!114 &1012680807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24109,7 +24223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 1435189816}
-  _transformFeatureStateProvider: {fileID: 1012680806}
+  _transformFeatureStateProvider: {fileID: 0}
   _transformFeatureConfigs:
     _values:
     - _mode: 0
@@ -25923,6 +26037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThumbsUpPose
       objectReference: {fileID: 0}
+    - target: {fileID: 3005601684205340121, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 257378863}
     - target: {fileID: 3005601684205340123, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -25963,6 +26081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3005601684205340124, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 257378862}
     - target: {fileID: 3984264785163686590, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: _hand
       value: 
@@ -27824,6 +27946,7 @@ RectTransform:
   - {fileID: 1132005561}
   - {fileID: 2057285835}
   - {fileID: 764847046}
+  - {fileID: 176716879}
   m_Father: {fileID: 685293169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

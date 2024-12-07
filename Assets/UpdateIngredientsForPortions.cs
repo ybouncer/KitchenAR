@@ -1,17 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UpdateIngredientsForPortions : MonoBehaviour
 {
     [Header("Ingredient Text GameObjects")]
-    public Text pizzaDoughText;
-    public Text tomatoSauceText;
-    public Text mozzarellaText;
-    public Text basilLeavesText;
-    public Text oliveOilText;
+    public TMP_Text pizzaDoughText;
+    public TMP_Text tomatoSauceText;
+    public TMP_Text mozzarellaText;
+    public TMP_Text basilLeavesText;
+    public TMP_Text oliveOilText;
+    
 
     [Header("Portions Text")]
-    public Text portionsText; // Text displaying the number of portions (as an integer)
+    public TMP_Text portionsText; // Text displaying the number of portions (as an integer)
 
     // Baseline values for the ingredients
     private float pizzaDoughBaseline = 250f; // grams
