@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using TMPro; // Import TextMeshPro namespace
 
 public class HandRotationDetector : MonoBehaviour
 {
@@ -8,7 +9,10 @@ public class HandRotationDetector : MonoBehaviour
     private Quaternion previousRotation; // Stores the previous rotation of the hand
     public GameObject targetObject; // The object you want to check for gaze interaction
     public Camera playerCamera; // The camera used for raycasting (usually the player's main camera)
-    public int Debugint;
+    public GameObject numberPortions; // The GameObject containing the text for the number of portions
+    public int Debugint = 1; // Initial portion count (e.g., 1 portion)
+
+    private TextMeshProUGUI portionText; // Reference to the TextMeshPro component
 
     void Start()
     {
@@ -25,6 +29,19 @@ public class HandRotationDetector : MonoBehaviour
         if (playerCamera == null)
         {
             playerCamera = Camera.main; // Automatically get the main camera if not assigned
+        }
+
+        if (numberPortions != null)
+        {
+            // Get the TextMeshPro component from the numberPortions GameObject
+            portionText = numberPortions.GetComponent<TextMeshProUGUI>();
+
+            // Initialize the text with the current portion count
+            UpdatePortionText();
+        }
+        else
+        {
+            Debug.LogError("NumberPortions GameObject is not assigned.");
         }
 
         // Initialize with the current rotation
@@ -69,19 +86,36 @@ public class HandRotationDetector : MonoBehaviour
             if (rotationDirection > 0.0f)
             {
                 Debug.Log("Clockwise rotation detected!");
-                if (Debugint > 0)
-                    Debugint = Debugint - 1;
+                if (Debugint > 1) // Prevent portions from going below 1
+                {
+                    Debugint -= 1;
+                    UpdatePortionText();
+                }
             }
             else
             {
                 Debug.Log("Counterclockwise rotation detected!");
-                Debugint = Debugint + 1;
+                Debugint += 1;
+                UpdatePortionText();
             }
-            Debug.Log(Debugint);
+
+            Debug.Log("Portion count: " + Debugint);
+
+            // Update the previous rotation
             previousRotation = currentRotation;
         }
+    }
 
-        // Update the previous rotation
-        //previousRotation = currentRotation;
+    // Updates the portion count text
+    private void UpdatePortionText()
+    {
+        if (portionText != null)
+        {
+            portionText.text = Debugint.ToString();
+        }
+        else
+        {
+            Debug.LogError("TextMeshProUGUI component not found on NumberPortions GameObject.");
+        }
     }
 }
