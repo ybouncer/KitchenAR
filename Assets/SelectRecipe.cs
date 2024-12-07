@@ -1,68 +1,83 @@
-using Microsoft.MixedReality.Toolkit.Input;
-using Microsoft.MixedReality.Toolkit;
 using UnityEngine;
+using UnityEngine.EventSystems;  // Necessary for detecting UI elements
+using UnityEngine.UI;           // Required for working with UI elements
 
 public class SelectRecipe : MonoBehaviour
-{   
-    public GameObject parentBook; // Parent Book that contains Left and Right side
-    public GameObject ingredientsPanel; // Ingredients panel that shows ingredients and let's decide on the number of portions
-    // References to the book sides that contain colliders
-    public GameObject bookLeft;  // Page 1 parent object (left page/bottom side)
-    public GameObject bookRight;  // Page 2 parent object (right page/top side)
+{
+    public Camera playerCamera; // Reference to the player's camera
+    public GameObject book; // Reference to the main book object
+    public GameObject leftSide; // Reference to the left side of the book
+    public GameObject rightSide; // Reference to the right side of the book
 
-    private IMixedRealityGazeProvider gazeProvider;
+    public GameObject page1; // Left page 1 (UI Canvas)
+    public GameObject page2; // Left page 2 (UI Canvas)
+    public GameObject page3; // Right page 3 (UI Canvas)
+    public GameObject page4; // Right page 4 (UI Canvas)
 
-    private void Start()
+    public GameObject ingredientsPanel; // Reference to the ingredientsPanel
+
+    private GameObject activeLeftPage; // The currently active page on the left side
+    private GameObject activeRightPage; // The currently active page on the right side
+
+    private GraphicRaycaster graphicRaycaster; // Reference to the GraphicRaycaster on the UI Canvas
+    private PointerEventData pointerEventData; // Used for raycasting to UI elements
+    private EventSystem eventSystem; // Event system for UI interactions
+
+    void Start()
     {
-        // Get the GazeProvider using the correct service method in MRTK 3
-        gazeProvider = CoreServices.InputSystem?.GazeProvider;
+        // Initialize the active pages (you can change these based on your needs)
+        SetActivePages();
+        
+        // Set up the graphic raycaster and event system
+        graphicRaycaster = GetComponentInChildren<GraphicRaycaster>();
+        eventSystem = GetComponentInChildren<EventSystem>();
+        pointerEventData = new PointerEventData(eventSystem);
     }
 
-    public void RecipeSelected()
+    void Update()
     {
-        // Check if the gaze is on page 1 or page 2
-        if (IsGazingAtPage(bookLeft))  // Fixed pageLeft -> bookLeft
+        if (playerCamera == null)
         {
-            // Logic to handle page 1 selection 
-            SelectPage1();
+            playerCamera = Camera.main; // Automatically assign if not set
         }
-        else if (IsGazingAtPage(bookRight))  // Fixed pageRight -> bookRight
-        {
-            // Logic to handle page 2 selection
-            SelectPage2();
-        }
-    }
 
-    // Check if the gaze is on the provided page's collider
-    private bool IsGazingAtPage(GameObject page)
-    {
-        if (gazeProvider != null && gazeProvider.GazeTarget != null)
+        // Perform raycast to detect gaze
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+
+        // Set pointer position for raycasting
+        pointerEventData.position = new Vector2(playerCamera.pixelWidth / 2, playerCamera.pixelHeight / 2); // Assuming gaze is in the center of the screen
+
+        // Raycast to detect if we're looking at the UI (pages)
+        if (graphicRaycaster != null)
         {
-            // Ensure the page object has a Collider component
-            Collider pageCollider = page.GetComponent<Collider>();
-            if (pageCollider != null && gazeProvider.GazeTarget == page)
+            // Perform the raycast using the GraphicRaycaster and EventSystem
+            var results = new System.Collections.Generic.List<RaycastResult>();
+            graphicRaycaster.Raycast(pointerEventData, results);
+
+            foreach (var result in results)
             {
-                return true;
+                // Check if the raycast hits any active page on the left or right side
+                if (result.gameObject == activeLeftPage || result.gameObject == activeRightPage)
+                {
+                    Debug.Log("Gazing at an active page!");
+                    // Perform the action when gazing at an active page
+                    book.SetActive(false);
+                    ingredientsPanel.SetActive(true);
+                    break;
+                }
             }
         }
-        return false;
     }
 
-    // Logic when the user gazes at and selects page 1
-    private void SelectPage1()
+    // Set the active pages based on which pages are currently visible
+    void SetActivePages()
     {
-        Select();
-    }
+        // Example logic to set active pages based on which pages are active in your UI
+        // You can update this based on your actual logic to switch pages
+        activeLeftPage = page1.activeSelf ? page1 : page2;
+        activeRightPage = page3.activeSelf ? page3 : page4;
 
-    // Logic when the user gazes at and selects page 2
-    private void SelectPage2()
-    {
-        Select();
-    }
-
-    private void Select()
-    {
-        parentBook.SetActive(false);  // Deactivates the book
-        ingredientsPanel.SetActive(true);  // Activates the ingredients panel
+        Debug.Log($"Active Left Page: {activeLeftPage.name}");
+        Debug.Log($"Active Right Page: {activeRightPage.name}");
     }
 }
