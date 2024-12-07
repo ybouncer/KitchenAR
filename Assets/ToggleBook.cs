@@ -8,8 +8,9 @@ public class ToggleBook : MonoBehaviour
     public GameObject CanvasLeft2;
     public GameObject CanvasRight1;
     public GameObject CanvasRight2;
+    public GameObject IngredientsPanel;
     public HingeJoint hinge;
-
+    
     public void Toggle()
     {
         if (hinge != null) {
@@ -21,6 +22,7 @@ public class ToggleBook : MonoBehaviour
             Renderer childrend = child.GetComponent<Renderer>();
             childrend.enabled = true;
         }
+        IngredientsPanel.SetActive(false);
         CanvasLeft1.SetActive(true);
         CanvasLeft2.SetActive(false);
         CanvasRight1.SetActive(true);

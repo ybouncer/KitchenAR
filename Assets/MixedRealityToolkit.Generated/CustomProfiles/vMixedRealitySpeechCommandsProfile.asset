@@ -17,7 +17,7 @@ MonoBehaviour:
   recognitionConfidenceLevel: 2
   speechCommands:
   - localizationKey: 
-    keyword: Reset
+    keyword: Return
     keyCode: 51
     action:
       id: 0

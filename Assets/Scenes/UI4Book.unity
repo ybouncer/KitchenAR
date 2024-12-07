@@ -10523,6 +10523,7 @@ MonoBehaviour:
   CanvasLeft2: {fileID: 0}
   CanvasRight1: {fileID: 0}
   CanvasRight2: {fileID: 0}
+  IngredientsPanel: {fileID: 0}
   hinge: {fileID: 624724757}
 --- !u!1 &643566781
 GameObject:
@@ -14955,7 +14956,6 @@ GameObject:
   - component: {fileID: 861968464}
   - component: {fileID: 861968465}
   - component: {fileID: 861968468}
-  - component: {fileID: 861968467}
   m_Layer: 0
   m_Name: VoiceAndGestureHandler
   m_TagString: Untagged
@@ -15031,18 +15031,6 @@ MonoBehaviour:
   book: {fileID: 487319964}
   hinge: {fileID: 1957485508}
   opened: 0
---- !u!114 &861968467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861968461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 735fe658f2800a84b92cfc514cb72cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &861968468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26485,6 +26473,7 @@ MonoBehaviour:
   CanvasLeft2: {fileID: 0}
   CanvasRight1: {fileID: 0}
   CanvasRight2: {fileID: 0}
+  IngredientsPanel: {fileID: 0}
   hinge: {fileID: 0}
 --- !u!1 &1546040365 stripped
 GameObject:
@@ -26523,7 +26512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFocusRequired: 0
   keywords:
-  - keyword: Reset
+  - keyword: Return
     response:
       m_PersistentCalls:
         m_Calls:
@@ -33465,6 +33454,7 @@ MonoBehaviour:
   CanvasLeft2: {fileID: 1801001842}
   CanvasRight1: {fileID: 478132463}
   CanvasRight2: {fileID: 572233686}
+  IngredientsPanel: {fileID: 685293168}
   hinge: {fileID: 1957485508}
 --- !u!114 &1957485511
 MonoBehaviour:
