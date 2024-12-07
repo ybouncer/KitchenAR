@@ -2607,12 +2607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ef475d916adba4093d0c2e9f70ba40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pizzaDoughText: {fileID: 0}
-  tomatoSauceText: {fileID: 0}
-  mozzarellaText: {fileID: 0}
-  basilLeavesText: {fileID: 0}
-  oliveOilText: {fileID: 0}
-  portionsText: {fileID: 0}
+  pizzaDoughText: {fileID: 981621794}
+  tomatoSauceText: {fileID: 1055878662}
+  mozzarellaText: {fileID: 735982309}
+  basilLeavesText: {fileID: 948770539}
+  oliveOilText: {fileID: 1032588797}
+  portionsText: {fileID: 713508052}
 --- !u!1 &178225836
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,7 +11013,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &685293169
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11292,6 +11292,22 @@ GameObject:
   - component: {fileID: 713508051}
   - component: {fileID: 713508053}
   - component: {fileID: 713508052}
+  - component: {fileID: 713508069}
+  - component: {fileID: 713508068}
+  - component: {fileID: 713508067}
+  - component: {fileID: 713508066}
+  - component: {fileID: 713508065}
+  - component: {fileID: 713508064}
+  - component: {fileID: 713508063}
+  - component: {fileID: 713508062}
+  - component: {fileID: 713508061}
+  - component: {fileID: 713508060}
+  - component: {fileID: 713508059}
+  - component: {fileID: 713508058}
+  - component: {fileID: 713508057}
+  - component: {fileID: 713508056}
+  - component: {fileID: 713508055}
+  - component: {fileID: 713508054}
   m_Layer: 0
   m_Name: Number
   m_TagString: Untagged
@@ -11417,6 +11433,230 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713508050}
   m_CullTransparentMesh: 1
+--- !u!114 &713508054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada9443e5d0e93e4db4ba4bc148bc11d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5654e6c9074395a488e53d752326fe7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f62bbcecb5eb64ebcd7f9a7882d207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fc4ea6c99d0f244f936a9781e52bff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8acc4cb7291b6574781b9c934a2e67e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b974daa1e27e0fd47a5c88f80020fa13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ea591395341a9f458851076f036c53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7609c41da16b472449d81d6d57c86429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc69d115285e744fb90a37e8a2be9b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e7551a41622b4b4c8832cf39487a2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce3109eb869bfb4aada33e38cc9e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e499d220de8e504fa54970e2bba9a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3f86a6da2302846804d55c4222e3e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3cf3c3fd9f3b7d438d7f415bd0ccb8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f29ad9400c4c04fbb886b8b198644e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
+--- !u!114 &713508069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713508050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14f2625e9ef64c44cbf2ec9206d8d212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  portionText: {fileID: 713508052}
+  updateIngredientsScript: {fileID: 176716880}
 --- !u!1 &716582335
 GameObject:
   m_ObjectHideFlags: 0
@@ -14803,8 +15043,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 735fe658f2800a84b92cfc514cb72cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  portionText: {fileID: 713508052}
-  updateIngredientsScript: {fileID: 861968468}
 --- !u!114 &861968468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26452,6 +26690,262 @@ MonoBehaviour:
         - m_Target: {fileID: 2117612261}
           m_TargetAssemblyTypeName: SelectRecipe, Assembly-CSharp
           m_MethodName: Update
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: One portion
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508069}
+          m_TargetAssemblyTypeName: SetPortion1, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Two portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508068}
+          m_TargetAssemblyTypeName: SetPortion2, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Three portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508067}
+          m_TargetAssemblyTypeName: SetPortion3, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Four portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508066}
+          m_TargetAssemblyTypeName: SetPortion4, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Five portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508065}
+          m_TargetAssemblyTypeName: SetPortion5, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Six portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508064}
+          m_TargetAssemblyTypeName: SetPortion6, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Seven potions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508063}
+          m_TargetAssemblyTypeName: SetPortion7, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Eight portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508062}
+          m_TargetAssemblyTypeName: SetPortion8, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Nine portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508061}
+          m_TargetAssemblyTypeName: SetPortion9, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Ten portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508060}
+          m_TargetAssemblyTypeName: SetPortion10, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Eleven portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508059}
+          m_TargetAssemblyTypeName: SetPortion11, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Twelve portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508058}
+          m_TargetAssemblyTypeName: SetPortion12, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Thirteen portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508057}
+          m_TargetAssemblyTypeName: SetPortion13, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Fourteen portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508056}
+          m_TargetAssemblyTypeName: SetPortion14, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Fifteen portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508055}
+          m_TargetAssemblyTypeName: SetPortion15, Assembly-CSharp
+          m_MethodName: UpdatePortion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Sixteen portions
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 713508054}
+          m_TargetAssemblyTypeName: SetPortion16, Assembly-CSharp
+          m_MethodName: UpdatePortion
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
