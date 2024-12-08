@@ -14417,6 +14417,7 @@ GameObject:
   - component: {fileID: 861968464}
   - component: {fileID: 861968465}
   - component: {fileID: 861968468}
+  - component: {fileID: 861968469}
   m_Layer: 0
   m_Name: VoiceAndGestureHandler
   m_TagString: Untagged
@@ -14512,6 +14513,21 @@ MonoBehaviour:
   basilLeavesText: {fileID: 948770539}
   oliveOilText: {fileID: 1032588797}
   portionsText: {fileID: 713508052}
+--- !u!114 &861968469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861968461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82bbbf9a11c729b4d8b6f5cd0adb7ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientsTablePanel: {fileID: 1132005560}
+  checkedSprite: {fileID: 21300000, guid: 0ba3956966911ee4b909fd1254c495b6, type: 3}
+  uncheckedSprite: {fileID: 21300000, guid: 275f56ef63dcb8e4aa35fcc7f363a82a, type: 3}
 --- !u!1 &864521201
 GameObject:
   m_ObjectHideFlags: 0
@@ -18914,7 +18930,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132005560}
   m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26274,6 +26290,198 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - keyword: Check one
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckOne
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Check two
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckTwo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Check three
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckThree
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Check four
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckFour
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Check five
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckFive
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck one
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckOne
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck two
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckTwo
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck three
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckThree
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck four
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckFour
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck five
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckFive
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Check all
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: CheckAll
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - keyword: Uncheck all
+    response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 861968469}
+          m_TargetAssemblyTypeName: CheckboxToggle, Assembly-CSharp
+          m_MethodName: UncheckAll
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   persistentKeywords: 0
   speechConfirmationTooltipPrefab: {fileID: 0}
 --- !u!114 &1549803051
@@ -27175,10 +27383,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1132005561}
   - {fileID: 2057285835}
   - {fileID: 764847046}
   - {fileID: 176716879}
+  - {fileID: 1132005561}
   m_Father: {fileID: 685293169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
