@@ -1477,8 +1477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb4ee6a5192e5b9419cfd44a11dfc321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightThumb: {fileID: 0}
-  rightIndex: {fileID: 0}
+  rightThumb: {fileID: 2112760189}
+  rightIndex: {fileID: 384081365}
   grabThreshold: 0.05
 --- !u!65 &116252479
 BoxCollider:
@@ -5606,6 +5606,10 @@ PrefabInstance:
       value: 0.21960786
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: enableDynamicResolution
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: dynamicResolutionVersion
       value: 1
       objectReference: {fileID: 0}
@@ -5712,6 +5716,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       insertIndex: 1
       addedObject: {fileID: 1977968250}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1977968254}
     - targetCorrespondingSourceObject: {fileID: 100006, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 394219164}
@@ -14411,6 +14418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9294ff47b883f44b68f243126ef347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightThumb: {fileID: 2112760189}
+  rightIndex: {fileID: 384081365}
+  grabThreshold: 0.05
 --- !u!65 &1125458521
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22144,6 +22154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 320faeb3f85296c44845a71c6b3343ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightThumb: {fileID: 2112760189}
+  rightIndex: {fileID: 384081365}
+  grabThreshold: 0.05
 --- !u!65 &1725240122
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25154,6 +25167,72 @@ MonoBehaviour:
   installationRoutineCheckpoint:
     _installationRoutineId: 
     _installationVariants: []
+--- !u!114 &1977968254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977968245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555725d48e9051a4bb6b8d45178c2fdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectionSurfaceType: 0
+  overlayType: 1
+  compositionDepth: 0
+  hidden: 0
+  overridePerLayerColorScaleAndOffset: 0
+  colorScale: {x: 1, y: 1, z: 1, w: 1}
+  colorOffset: {x: 0, y: 0, z: 0, w: 0}
+  passthroughLayerResumed:
+    m_PersistentCalls:
+      m_Calls: []
+  colorMapEditorType_: 0
+  colorMapEditorGradient:
+    serializedVersion: 2
+    key0: {r: 0, g: 0, b: 0, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_ColorSpace: -1
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  colorMapEditorContrast: 0
+  colorMapEditorBrightness: 0
+  colorMapEditorPosterize: 0
+  colorMapEditorSaturation: 0
+  _colorLutSourceTexture: {fileID: 0}
+  _colorLutTargetTexture: {fileID: 0}
+  _lutWeight: 1
+  _flipLutY: 1
+  serializedSurfaceGeometry: []
+  textureOpacity_: 0
+  edgeRenderingEnabled_: 0
+  edgeColor_: {r: 1, g: 1, b: 1, a: 1}
+  colorMapType: 0
 --- !u!1 &1979264686
 GameObject:
   m_ObjectHideFlags: 0

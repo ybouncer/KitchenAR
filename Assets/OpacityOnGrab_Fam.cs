@@ -32,8 +32,8 @@ public class OpacityOnGrab_Fam : MonoBehaviour
     }
 void Update()
     {
-        // Vérifier si l'objet est attrapé par OVRGrabbable ou via les doigts
-        if (grabbable.isGrabbed || IsGrabbedByFingers())
+        // Vérifier si l'objet est attrapé par OVRGrabbable et via les doigts
+        if (grabbable.isGrabbed && IsGrabbedByFingers())
         {
             SetOpacity(0.75f); // Réduire l'opacité à 75%
         }

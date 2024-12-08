@@ -8,6 +8,12 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
     private int rotation; // Sauvegarde la rotation en x
     private int newRotation = 90; // Nouvelle rotation en x
 
+    public Transform rightThumb; // Transform du pouce droit
+    public Transform rightIndex; // Transform de l'index droit
+    public float grabThreshold = 0.05f; // Distance minimale pour considérer un grab (en mètres)
+
+    private bool isGrabbedByFingers = false; // Indique si l'objet est attrapé via les doigts
+
     void Start()
     {
         // Récupérer le composant OVRGrabbable
@@ -24,11 +30,10 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
         // Initialiser la rotation
         rotation = (int)transform.rotation.eulerAngles.x;
     }
-
-    void Update()
+void Update()
     {
-        // Vérifier si l'objet est attrapé
-        if (grabbable.isGrabbed && rotation == 0)
+        // Vérifier si l'objet est attrapé par OVRGrabbable et via les doigts
+        if (grabbable.isGrabbed && IsGrabbedByFingers())
         {
             SetOpacity(0.75f); // Réduire l'opacité à 75%
         }
@@ -37,6 +42,18 @@ public class OpacityOnGrab_Gastro : MonoBehaviour
             SetOpacity(0.5f); // Restaurer l'opacité à 50%
             rotation = newRotation;
         }
+    }
+
+    // Vérifie si l'objet est attrapé via les doigts (pouce et index)
+    bool IsGrabbedByFingers()
+    {
+        if (rightThumb != null && rightIndex != null)
+        {
+            float distance = Vector3.Distance(rightThumb.position, rightIndex.position);
+            isGrabbedByFingers = distance <= grabThreshold;
+            return isGrabbedByFingers;
+        }
+        return false;
     }
 
     // Fonction pour changer l'opacité
