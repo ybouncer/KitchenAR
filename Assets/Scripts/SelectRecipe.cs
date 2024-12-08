@@ -19,6 +19,11 @@ public class SelectRecipe : MonoBehaviour
     private PointerEventData pointerEventData;
     private EventSystem eventSystem;
 
+    public GameObject CanvasLeft1;
+    public GameObject CanvasLeft2;
+    public GameObject CanvasRight1;
+    public GameObject CanvasRight2;
+
     void Start()
     {
         // Use FindFirstObjectByType to avoid deprecated warning
@@ -47,8 +52,9 @@ public class SelectRecipe : MonoBehaviour
             // Process raycast results
             foreach (var result in results)
             {
-                if (result.gameObject == page)
+                if (result.gameObject.transform.parent.gameObject == page)
                 {
+                    Debug.Log("oui");
                     HandleInteraction();
                     return; // Stop checking other pages once interaction is detected
                 }
@@ -60,7 +66,14 @@ public class SelectRecipe : MonoBehaviour
     public void HandleInteraction()
     {
         // Hide the book and show the ingredients panel
-        book.SetActive(false);
+        foreach (Transform child in book.transform) {
+            Renderer childrend = child.GetComponent<Renderer>();
+            childrend.enabled = false;
+        }
+        CanvasLeft1.SetActive(false);
+        CanvasRight1.SetActive(false);
+        CanvasLeft2.SetActive(false);
+        CanvasRight2.SetActive(false);        
         ingredientsPanel.SetActive(true);
         bookShowHideScript.SetIngredientsPanelWasLastActive(true);
 

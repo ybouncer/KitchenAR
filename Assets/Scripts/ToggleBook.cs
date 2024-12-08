@@ -25,7 +25,7 @@ public class ToggleBook : MonoBehaviour
         }
         IngredientsPanel.SetActive(false);
         bookShowHideScript.SetIngredientsPanelWasLastActive(false);
-        parentbook.SetActive(true);
+        //parentbook.SetActive(true);
         CanvasLeft1.SetActive(true);
         CanvasLeft2.SetActive(false);
         CanvasRight1.SetActive(true);

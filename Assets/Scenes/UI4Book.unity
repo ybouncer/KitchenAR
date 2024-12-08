@@ -6892,7 +6892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &478132464
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10558,7 +10558,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685293168}
-  m_LocalRotation: {x: -0.5088232, y: -0.49184996, z: -0.50525814, w: 0.49385914}
+  m_LocalRotation: {x: -0.4811459, y: -0.51865286, z: 0.50967896, w: -0.48961747}
   m_LocalPosition: {x: 0, y: 0, z: -0.0106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10566,7 +10566,7 @@ RectTransform:
   - {fileID: 1682886534}
   - {fileID: 1585250963}
   m_Father: {fileID: 1241364536}
-  m_LocalEulerAnglesHint: {x: -91.628, y: -86.70099, z: -2.979004}
+  m_LocalEulerAnglesHint: {x: 91, y: -86.70099, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.3176, y: -0.0497}
@@ -21443,7 +21443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3345112039074591420, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_Name
@@ -21455,11 +21455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604079215609914169, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8063917409972403850, guid: 6d2e9e308f4489440acebeaaf8792d39, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -23672,7 +23672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1469217524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25164,7 +25164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8820866526498997791, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: HandleInteraction
+      value: DetectGazeInteraction
       objectReference: {fileID: 0}
     - target: {fileID: 8820866526498997791, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -34998,6 +34998,10 @@ MonoBehaviour:
   bookShowHideScript: {fileID: 861968464}
   bookLeft: {fileID: 487319964}
   bookRight: {fileID: 1546040365}
+  CanvasLeft1: {fileID: 1469217523}
+  CanvasLeft2: {fileID: 1801001842}
+  CanvasRight1: {fileID: 478132463}
+  CanvasRight2: {fileID: 572233686}
 --- !u!4 &2117612262
 Transform:
   m_ObjectHideFlags: 0

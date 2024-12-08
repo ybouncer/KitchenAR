@@ -18,6 +18,11 @@ public class BookShowHide : MonoBehaviour
         IngredientsPanelWasLastActive = Boolean;
     }
 
+    void Start() {
+        IngredientsPanelWasLastActive = false;
+        PageActive = 1;
+    }
+
     // Method to hide elements
     public void Hide()
     {
