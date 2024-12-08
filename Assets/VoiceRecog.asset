@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
+  m_Name: VoiceRecog
+  m_EditorClassIdentifier: 
+  _clientAccessToken: D2HOXGVLO5TNEHGYX2AMBG3JVIUCJLM6
+  _appInfo:
+    name: kitchen_ar
+    id: 577737481575848
+    lang: en
+    isPrivate: 0
+    createdAt: 2024-11-22T01:07:28-0800
+    trainingStatus: 1
+    lastTrainDuration: 59
+    lastTrainedAt: 2024-11-22T01:18:57-0800
+    nextTrainAt: 2024-11-22T01:17:58-0800
+    intents: []
+    entities: []
+    traits: []
+    versionTags: []
+    voices: []
+  _configData:
+  - {fileID: 6752946989785738819}
+  _configurationId: ff2d74ad-df0e-44b6-9688-b28e110e4094
+  _requestType: 0
+  _requestTimeoutMs: 10000
+  endpointConfiguration:
+    _uriScheme: 
+    _authority: 
+    _port: 0
+    _witApiVersion: 
+    _message: 
+    _speech: 
+    _dictation: 
+    _synthesize: 
+    _event: 
+    _converse: 
+  isDemoOnly: 0
+  useIntentAttributes: 1
+  useConduit: 1
+  _manifestLocalPath: ConduitManifest-9f8b3da5-6a1e-4ac1-b37f-09d4ecaf0971.json
+  excludedAssemblies:
+  - Oculus.Voice.Demo, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - Meta.WitAi.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  relaxedResolution: 0
+--- !u!114 &6752946989785738819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c2918ba0e7451694416d42d69e0944, type: 3}
+  m_Name: WitComposerData
+  m_EditorClassIdentifier: 
+  canvases: []

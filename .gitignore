@@ -29,17 +29,22 @@ UserSettings/
 # Unity asset store tools
 *[Aa]sset[Ss]toreTools*
 
-# Mixed Reality specific folders (if any tools are used)
-Packages/com.unity.xr.interaction.toolkit/*
-Packages/com.unity.xr.hands/*
-Packages/com.microsoft.mixedreality.toolkit*
+# Mixed Reality specific folders (adjust as needed)
+Packages/com.unity.xr.interaction.toolkit/
+Packages/com.unity.xr.hands/
+Packages/com.microsoft.mixedreality.toolkit/
+
+# MRTK generated files
+Assets/MixedRealityToolkit.Generated/
 
 # Git-specific
-*.git/
-*.gitignore
+.gitignore
 
 # Visual Studio Code settings (optional)
 .vscode/
+
+# Debug files (optional) 
+.utmp/
 
 # Plugin auto-generated files
 *.dll
