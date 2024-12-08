@@ -10,6 +10,7 @@ public class ToggleBook : MonoBehaviour
     public GameObject CanvasRight2;
     public GameObject IngredientsPanel;
     public HingeJoint hinge;
+    public BookShowHide bookShowHideScript;
     
     public void Toggle()
     {
@@ -23,6 +24,7 @@ public class ToggleBook : MonoBehaviour
             childrend.enabled = true;
         }
         IngredientsPanel.SetActive(false);
+        bookShowHideScript.SetIngredientsPanelWasLastActive(false);
         CanvasLeft1.SetActive(true);
         CanvasLeft2.SetActive(false);
         CanvasRight1.SetActive(true);

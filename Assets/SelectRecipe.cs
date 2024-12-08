@@ -1,36 +1,28 @@
 using UnityEngine;
-using UnityEngine.EventSystems;  // Necessary for detecting UI elements
-using UnityEngine.UI;           // Required for working with UI elements
+using UnityEngine.UI;
+using Microsoft.MixedReality.Toolkit.Input;
+using UnityEngine.EventSystems;
+using System.Collections.Generic;
 
 public class SelectRecipe : MonoBehaviour
 {
-    public Camera playerCamera; // Reference to the player's camera
-    public GameObject book; // Reference to the main book object
-    public GameObject leftSide; // Reference to the left side of the book
-    public GameObject rightSide; // Reference to the right side of the book
+    public Camera playerCamera; // The player's camera
+    public GameObject book; // The main book object
+    public GameObject ingredientsPanel; // Panel to show when interacting with the book
+    public BookShowHide bookShowHideScript; // Script to manage book visibility
 
-    public GameObject page1; // Left page 1 (UI Canvas)
-    public GameObject page2; // Left page 2 (UI Canvas)
-    public GameObject page3; // Right page 3 (UI Canvas)
-    public GameObject page4; // Right page 4 (UI Canvas)
+    // References for the left and right sides of the book
+    public GameObject bookLeft; // Book Left side (parent of Page1 and Page2)
+    public GameObject bookRight; // Book Right side (parent of Page3 and Page4)
 
-    public GameObject ingredientsPanel; // Reference to the ingredientsPanel
-
-    private GameObject activeLeftPage; // The currently active page on the left side
-    private GameObject activeRightPage; // The currently active page on the right side
-
-    private GraphicRaycaster graphicRaycaster; // Reference to the GraphicRaycaster on the UI Canvas
-    private PointerEventData pointerEventData; // Used for raycasting to UI elements
-    private EventSystem eventSystem; // Event system for UI interactions
+    private GraphicRaycaster graphicRaycaster; // For detecting UI interactions
+    private PointerEventData pointerEventData;
+    private EventSystem eventSystem;
 
     void Start()
     {
-        // Initialize the active pages (you can change these based on your needs)
-        SetActivePages();
-        
-        // Set up the graphic raycaster and event system
-        graphicRaycaster = GetComponentInChildren<GraphicRaycaster>();
-        eventSystem = GetComponentInChildren<EventSystem>();
+        // Use FindFirstObjectByType to avoid deprecated warning
+        eventSystem = Object.FindFirstObjectByType<EventSystem>();
         pointerEventData = new PointerEventData(eventSystem);
     }
 
@@ -41,43 +33,75 @@ public class SelectRecipe : MonoBehaviour
             playerCamera = Camera.main; // Automatically assign if not set
         }
 
-        // Perform raycast to detect gaze
-        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
+        // Check for UI interaction using gaze
+        DetectGazeInteraction();
+    }
 
-        // Set pointer position for raycasting
-        pointerEventData.position = new Vector2(playerCamera.pixelWidth / 2, playerCamera.pixelHeight / 2); // Assuming gaze is in the center of the screen
+    private void DetectGazeInteraction()
+    {
+        // Set the pointer position (assuming gaze is at the center of the screen)
+        pointerEventData.position = new Vector2(Screen.width / 2, Screen.height / 2);
 
-        // Raycast to detect if we're looking at the UI (pages)
-        if (graphicRaycaster != null)
+        // Get the list of active pages
+        List<GameObject> activePages = GetActivePages();
+
+        // Raycast to all active pages
+        foreach (GameObject page in activePages)
         {
-            // Perform the raycast using the GraphicRaycaster and EventSystem
-            var results = new System.Collections.Generic.List<RaycastResult>();
+            graphicRaycaster = page.GetComponent<GraphicRaycaster>();
+            if (graphicRaycaster == null) continue;
+
+            // Perform raycasting using the GraphicRaycaster
+            List<RaycastResult> results = new List<RaycastResult>();
             graphicRaycaster.Raycast(pointerEventData, results);
 
+            // Process raycast results
             foreach (var result in results)
             {
-                // Check if the raycast hits any active page on the left or right side
-                if (result.gameObject == activeLeftPage || result.gameObject == activeRightPage)
+                if (result.gameObject == page)
                 {
-                    Debug.Log("Gazing at an active page!");
-                    // Perform the action when gazing at an active page
-                    book.SetActive(false);
-                    ingredientsPanel.SetActive(true);
-                    break;
+                    Debug.Log($"Gazing at: {page.name}");
+                    HandleInteraction(page);
+                    return; // Stop checking other pages once interaction is detected
                 }
             }
         }
     }
 
-    // Set the active pages based on which pages are currently visible
-    void SetActivePages()
+    // Handle the interaction when gazing at a page
+    private void HandleInteraction(GameObject page)
     {
-        // Example logic to set active pages based on which pages are active in your UI
-        // You can update this based on your actual logic to switch pages
-        activeLeftPage = page1.activeSelf ? page1 : page2;
-        activeRightPage = page3.activeSelf ? page3 : page4;
+        // Hide the book and show the ingredients panel
+        book.SetActive(false);
+        ingredientsPanel.SetActive(true);
+        bookShowHideScript.SetIngredientsPanelWasLastActive(true);
 
-        Debug.Log($"Active Left Page: {activeLeftPage.name}");
-        Debug.Log($"Active Right Page: {activeRightPage.name}");
+        Debug.Log($"Interacted with page: {page.name}");
+    }
+
+    // Get all the active pages (both on the left and right sides of the book)
+    private List<GameObject> GetActivePages()
+    {
+        List<GameObject> activePages = new List<GameObject>();
+
+        // Check for active pages on the left side
+        foreach (Transform page in bookLeft.transform)
+        {
+            if (page.gameObject.activeSelf) // If the page is active
+            {
+                activePages.Add(page.gameObject);
+            }
+        }
+
+        // Check for active pages on the right side
+        foreach (Transform page in bookRight.transform)
+        {
+            if (page.gameObject.activeSelf) // If the page is active
+            {
+                activePages.Add(page.gameObject);
+            }
+        }
+
+        return activePages;
     }
 }
