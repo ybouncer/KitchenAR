@@ -1,0 +1,61 @@
+{
+	"recipe": [
+        {
+			"name": "Pizza Margherita",
+			"yield": "2 portions",
+			"prepTime": "15 minutes",
+			"cookTime": "10-15 minutes",
+			"ingredients": [
+			  ["Pâte à pizza", "1 boule"],
+			  ["Sauce tomate", "1/2 tasse"],
+			  ["Fromage mozzarella frais", "1 tasse, râpé"],
+			  ["Feuilles de basilic frais", "8-10 feuilles"],
+			  ["Huile d'olive extra vierge", "2 cuillères à soupe"],
+			  ["Sel", "au goût"]
+			],
+			"step": [
+				"Voici la recette de nos Pizza margherita",
+			  "Préchauffer le four à 245 °C",
+			  "Étaler la pâte à pizza sur une surface légèrement farinée à l'épaisseur désirée",
+			  "Transférer la pâte sur une pierre à pizza ou une plaque à pâtisserie",
+			  "Étaler la sauce tomate uniformément sur la pâte , en laissant un petit bord",
+			  "Garnir de mozzarella râpée",
+			  "Cuire au four pendant 10 minutes, ou jusqu'à ce que la croûte soit dorée et le fromage bouillonnant",
+			  "Retirer du four et garnir de feuilles de basilic frais",
+			  "Arroser d'huile d'olive extra vierge et saler au goût",
+			  "Servir immédiatement et déguster !"
+			]
+		  },
+		  {
+			"name": "Ramen aux légumes",
+			"yield": "2 portions",
+			"prepTime": "20 minutes",
+			"cookTime": "10 minutes",
+			"ingredients": [
+			  ["Nouilles ramen", "2 paquets"],
+			  ["Bouillon de légumes", "4 tasses"],
+			  ["Carottes, râpées", "1 tasse"],
+			  ["Poireaux, émincés", "1 tasse"],
+			  ["Champignons shiitake, tranchés", "1/2 tasse"],
+			  ["Épinards frais", "1 tasse"],
+			  ["Sauce soja", "2 cuillères à soupe"],
+			  ["Huile de sésame", "1 cuillère à café"],
+			  ["Ail, haché", "1 gousse"],
+			  ["Gingembre frais, râpé", "1 pouce"]
+			],
+			"step": [
+				"Voici la recette de ramen aux légumes",
+			  "Faire bouillir de l'eau dans une grande casserole",
+			
+				"Ajouter le bouillon de légumes",
+			  "Ajouter les nouilles ramen et cuire selon les instructions du paquet",
+			  "Ajouter les carottes , les poireaux et les champignons shiitake au bouillon bouillant",
+			  "Cuire pendant 10 minutes , ou jusqu'à ce que les légumes soient tendres",
+			  "Ajouter les épinards et cuire jusqu'à ce que ils soient fanés",
+			  "Retirer du feu et ajouter la sauce soja , l'huile de sésame , l'ail et le gingembre",
+			  "Servir immédiatement dans des bols , en garnissant de narutomaki et d'algue nori",
+			  "Profiter de votre délicieux ramen aux légumes !"
+			]
+		  }
+    ]
+}
