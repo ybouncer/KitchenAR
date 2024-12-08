@@ -324,3 +324,10 @@ MonoBehaviour:
       id: 0
       description: None
       axisConstraint: 0
+  - localizationKey: 
+    keyword: Start
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
