@@ -26,18 +26,7 @@ public class SelectRecipe : MonoBehaviour
         pointerEventData = new PointerEventData(eventSystem);
     }
 
-    void Update()
-    {
-        if (playerCamera == null)
-        {
-            playerCamera = Camera.main; // Automatically assign if not set
-        }
-
-        // Check for UI interaction using gaze
-        DetectGazeInteraction();
-    }
-
-    private void DetectGazeInteraction()
+    public void DetectGazeInteraction()
     {
         // Set the pointer position (assuming gaze is at the center of the screen)
         pointerEventData.position = new Vector2(Screen.width / 2, Screen.height / 2);
@@ -60,8 +49,7 @@ public class SelectRecipe : MonoBehaviour
             {
                 if (result.gameObject == page)
                 {
-                    Debug.Log($"Gazing at: {page.name}");
-                    HandleInteraction(page);
+                    HandleInteraction();
                     return; // Stop checking other pages once interaction is detected
                 }
             }
@@ -69,14 +57,13 @@ public class SelectRecipe : MonoBehaviour
     }
 
     // Handle the interaction when gazing at a page
-    private void HandleInteraction(GameObject page)
+    public void HandleInteraction()
     {
         // Hide the book and show the ingredients panel
         book.SetActive(false);
         ingredientsPanel.SetActive(true);
         bookShowHideScript.SetIngredientsPanelWasLastActive(true);
 
-        Debug.Log($"Interacted with page: {page.name}");
     }
 
     // Get all the active pages (both on the left and right sides of the book)

@@ -25164,7 +25164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8820866526498997791, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Update
+      value: HandleInteraction
       objectReference: {fileID: 0}
     - target: {fileID: 8820866526498997791, guid: ce9491a5df028fd4ca0a5130dbaa4fec, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -25960,7 +25960,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2117612261}
           m_TargetAssemblyTypeName: SelectRecipe, Assembly-CSharp
-          m_MethodName: Update
+          m_MethodName: DetectGazeInteraction
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -25976,7 +25976,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2117612261}
           m_TargetAssemblyTypeName: SelectRecipe, Assembly-CSharp
-          m_MethodName: Update
+          m_MethodName: DetectGazeInteraction
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -25992,7 +25992,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2117612261}
           m_TargetAssemblyTypeName: SelectRecipe, Assembly-CSharp
-          m_MethodName: Update
+          m_MethodName: DetectGazeInteraction
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
