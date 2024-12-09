@@ -14487,6 +14487,7 @@ MonoBehaviour:
   page4: {fileID: 572233686}
   bookLeft: {fileID: 487319964}
   bookRight: {fileID: 1546040365}
+  ingredientsPanel: {fileID: 685293168}
 --- !u!114 &861968464
 MonoBehaviour:
   m_ObjectHideFlags: 0
