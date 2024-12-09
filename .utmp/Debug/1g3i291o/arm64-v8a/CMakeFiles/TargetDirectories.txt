@@ -1,0 +1,5 @@
+C:/Coding/Github Repository/KitchenAR/.utmp/Debug/1g3i291o/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Coding/Github Repository/KitchenAR/.utmp/Debug/1g3i291o/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Coding/Github Repository/KitchenAR/.utmp/Debug/1g3i291o/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Coding/Github Repository/KitchenAR/.utmp/Debug/1g3i291o/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Coding/Github Repository/KitchenAR/.utmp/Debug/1g3i291o/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
