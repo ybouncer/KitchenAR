@@ -32,6 +32,7 @@ public class OpacityOnGrab_Fam : MonoBehaviour
     }
 void Update()
     {
+        Debug.Log(grabbable.isGrabbed);
         // Vérifier si l'objet est attrapé par OVRGrabbable et via les doigts
         if (grabbable.isGrabbed && IsGrabbedByFingers())
         {
