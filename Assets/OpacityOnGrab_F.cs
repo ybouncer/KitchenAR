@@ -3,11 +3,11 @@ using Oculus.Interaction;
 
 public class OpacityOnGrab_F : MonoBehaviour
 {
-
-    private Grabbable grabbable; // Référence au composant Grabbable
-    private SpriteRenderer spriteRenderer; // Référence au SpriteRenderer
-    private Color originalColor; // Sauvegarde la couleur d'origine
-
+    // Référence au composant Grabbable
+    private Grabbable grabbable; 
+    // Référence au SpriteRenderer
+    private SpriteRenderer spriteRenderer; 
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,22 +23,11 @@ public class OpacityOnGrab_F : MonoBehaviour
         // Vérifier si l'objet est attrapé par Grabbable
         if (grabbable)
         {
-            SetOpacity(0.65f); // Réduire l'opacité à 65%
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.65f);        
         }
         else
         {
-            SetOpacity(1f); // Restaurer l'opacité à 100%
-        }
-    }
-
-        // Fonction pour changer l'opacité
-    void SetOpacity(float alpha)
-    {
-        if (spriteRenderer != null)
-        {
-            Color newColor = originalColor;
-            newColor.a = alpha; // Modifier l'alpha (transparence)
-            spriteRenderer.color = newColor;
+            spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);        
         }
     }
 }
