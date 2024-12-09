@@ -3,29 +3,32 @@ using Oculus.Interaction;
 
 public class OpacityOnGrab_S : MonoBehaviour
 {
-
-    private Grabbable grabbable; // Référence au composant Grabbable
-    private SpriteRenderer spriteRenderer; // Référence au SpriteRenderer
+    // Référence au composant Grabbable
+    private Grabbable grabbable; 
+    // Référence au SpriteRenderer
+    private SpriteRenderer spriteRenderer; 
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Récupérer le composant Grabbable
+        // Récupérer le composant Grabbable sur cet objet
         grabbable = GetComponent<Grabbable>();
-        // Récupérer le SpriteRenderer
-        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Récupérer le SpriteRenderer sur le parent
+        spriteRenderer = GetComponentInParent<SpriteRenderer>();
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Vérifier si l'objet est attrapé par Grabbable
+        // Vérifier si les composants sont valides avant d'appliquer les changements
         if (grabbable)
         {
+            // Réduire l'opacité à 65%
             spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 0.65f);        
         }
         else
         {
+            // Restaurer l'opacité à 100%
             spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, 1f);        
         }
     }
